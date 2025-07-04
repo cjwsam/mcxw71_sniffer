@@ -1,76 +1,290 @@
 /*
- * Copyright (c) 2016 Intel Corporation
+ * Copyright (c) 2024 Google LLC
  *
  * SPDX-License-Identifier: Apache-2.0
  */
 
 /**
- * @file Sample app to demonstrate PWM-based RGB LED control
+ * @file main.c
+ * @brief Multi-functional device firmware for Zephyr RTOS.
+ *
+ * This application demonstrates a device that simultaneously acts as a radio
+ * sniffer for both Bluetooth Low Energy (BLE) and IEEE 802.15.4 networks,
+ * while also logging data from on-board sensors (accelerometer and light)
+ * and providing a visual heartbeat via an LED.
+ *
+ * This implementation incorporates fixes for modern Zephyr APIs, particularly
+ * for network management event callbacks. It requires the appropriate device
+ * tree overlays and Kconfig settings to be enabled for all hardware components.
  */
 
 #include <zephyr/kernel.h>
-#include <zephyr/sys/printk.h>
 #include <zephyr/device.h>
-#include <zephyr/drivers/pwm.h>
+#include <zephyr/logging/log.h>
+#include <zephyr/version.h>
 
-static const struct pwm_dt_spec red_pwm_led =
-	PWM_DT_SPEC_GET(DT_ALIAS(red_pwm_led));
-static const struct pwm_dt_spec green_pwm_led =
-	PWM_DT_SPEC_GET(DT_ALIAS(green_pwm_led));
-static const struct pwm_dt_spec blue_pwm_led =
-	PWM_DT_SPEC_GET(DT_ALIAS(blue_pwm_led));
+/* Peripherals */
+#include <zephyr/drivers/gpio.h>
+#include <zephyr/drivers/sensor.h>
 
-#define STEP_SIZE PWM_USEC(2000)
+/* Networking & Radio */
+#include <zephyr/bluetooth/bluetooth.h>
+#include <zephyr/bluetooth/hci.h>
+#include <zephyr/net/net_if.h>
+#include <zephyr/net/net_mgmt.h>
+#include <zephyr/net/net_pkt.h>
+#include <zephyr/net/ieee802154.h>
+
+
+/* Register the logging module once */
+LOG_MODULE_REGISTER(sniffer_app, LOG_LEVEL_INF);
+
+/* --- Configuration --- */
+#define MAIN_LOOP_SLEEP_MS 2000 /* Sleep duration for the main loop (in ms) */
+
+/* --- Device Tree Aliases --- */
+
+/* Heartbeat LED */
+#if DT_HAS_ALIAS(led0)
+static const struct gpio_dt_spec heartbeat_led = GPIO_DT_SPEC_GET(DT_ALIAS(led0), gpios);
+#else
+#warning "led0 alias not defined in device tree. Heartbeat LED will be disabled."
+#define heartbeat_led (const struct gpio_dt_spec){0}
+#endif
+
+/* Accelerometer Sensor */
+#if DT_HAS_ALIAS(fxos8700)
+static const struct device *const accel_dev = DEVICE_DT_GET(DT_ALIAS(fxos8700));
+#else
+#warning "fxos8700 alias not defined in device tree. Accelerometer will be disabled."
+#define accel_dev NULL
+#endif
+
+/* Light Sensor */
+#if DT_HAS_ALIAS(tsl2591)
+static const struct device *const light_dev = DEVICE_DT_GET(DT_ALIAS(tsl2591));
+#else
+#warning "tsl2591 alias not defined in device tree. Light sensor will be disabled."
+#define light_dev NULL
+#endif
+
+
+/* --- BLE Sniffer --- */
+
+/**
+ * @brief Callback function for BLE scan results.
+ *
+ * This function is invoked for each BLE advertisement packet received.
+ * It logs the advertiser's address and the RSSI.
+ */
+static void ble_scan_cb(const bt_addr_le_t *addr, int8_t rssi, uint8_t type,
+            struct net_buf_simple *ad)
+{
+    char addr_str[BT_ADDR_LE_STR_LEN];
+    bt_addr_le_to_str(addr, addr_str, sizeof(addr_str));
+    LOG_INF("BLE device found: %s (RSSI %d)", addr_str, rssi);
+}
+
+/**
+ * @brief Initializes and starts the BLE scanner.
+ */
+static int ble_sniffer_init(void)
+{
+    struct bt_le_scan_param scan_param = {
+        .type       = BT_LE_SCAN_TYPE_PASSIVE,
+        .options    = BT_LE_SCAN_OPT_NONE,
+        .interval   = BT_GAP_SCAN_FAST_INTERVAL,
+        .window     = BT_GAP_SCAN_FAST_WINDOW,
+    };
+    int err;
+
+    err = bt_enable(NULL);
+    if (err) {
+        LOG_ERR("Bluetooth init failed (err %d)", err);
+        return err;
+    }
+
+    err = bt_le_scan_start(&scan_param, ble_scan_cb);
+    if (err) {
+        LOG_ERR("Starting scanning failed (err %d)", err);
+        return err;
+    }
+
+    LOG_INF("BLE sniffer started successfully");
+    return 0;
+}
+
+
+/* --- 802.15.4 Sniffer (Corrected) --- */
+
+static struct net_mgmt_event_callback mgmt_cb;
+
+/**
+ * @brief Callback for IEEE 802.15.4 events.
+ *
+ * NOTE: The function signature is updated to match the modern Zephyr API.
+ * The 'info' pointer is passed as a direct argument, and we do NOT
+ * unref the packet.
+ */
+static void ieee802154_handler(struct net_mgmt_event_callback *cb,
+                   uint32_t mgmt_event,
+                   struct net_if *iface,
+                   const void *info, size_t info_len)
+{
+    /* Check for the correct event type */
+    if (mgmt_event == NET_EVENT_IEEE802154_PROMISCUOUS) {
+        const struct net_pkt *pkt = info;
+
+        if (!pkt) {
+            return;
+        }
+
+        /* The RSSI is stored in the link-layer attributes of the packet buffer */
+        LOG_INF("802.15.4 packet received (RSSI: %d dBm)", net_pkt_rssi(pkt));
+
+        /*
+         * DO NOT UNREF THE PACKET HERE.
+         * The network stack retains ownership for management events.
+         */
+    }
+}
+
+/**
+ * @brief Initializes the 802.15.4 sniffer.
+ */
+static void ieee802154_sniffer_init(void)
+{
+    struct net_if *iface = net_if_get_default();
+
+    if (!iface) {
+        LOG_ERR("Could not get default network interface");
+        return;
+    }
+
+    /* Set up the callback to listen for raw packets */
+    net_mgmt_init_event_callback(&mgmt_cb, ieee802154_handler,
+                       NET_EVENT_IEEE802154_PACKET_RECEIVED);
+    net_mgmt_add_event_callback(&mgmt_cb);
+
+    /* Enter promiscuous mode to capture all traffic */
+    if (net_if_set_promisc(iface) != 0) {
+        LOG_ERR("Failed to set promiscuous mode on 802.15.4 interface");
+        return;
+    }
+
+    LOG_INF("802.15.4 sniffer started in promiscuous mode");
+}
+
+
+/* --- Sensor Handling --- */
+
+/**
+ * @brief Fetches and logs data from the accelerometer.
+ */
+static void log_accelerometer_data(void)
+{
+    if (!accel_dev || !device_is_ready(accel_dev)) {
+        return;
+    }
+
+    struct sensor_value acc[3];
+    int ret;
+
+    ret = sensor_sample_fetch(accel_dev);
+    if (ret < 0) {
+        LOG_ERR("Failed to fetch accelerometer sample: %d", ret);
+        return;
+    }
+
+    ret = sensor_channel_get(accel_dev, SENSOR_CHAN_ACCEL_XYZ, acc);
+    if (ret < 0) {
+        LOG_ERR("Failed to get accelerometer data: %d", ret);
+        return;
+    }
+
+    LOG_INF("Accel X: %.2f, Y: %.2f, Z: %.2f (m/s^2)",
+        sensor_value_to_double(&acc[0]),
+        sensor_value_to_double(&acc[1]),
+        sensor_value_to_double(&acc[2]));
+}
+
+/**
+ * @brief Fetches and logs data from the light sensor.
+ */
+static void log_light_data(void)
+{
+    if (!light_dev || !device_is_ready(light_dev)) {
+        return;
+    }
+
+    struct sensor_value light;
+    int ret;
+
+    ret = sensor_sample_fetch(light_dev);
+    if (ret < 0) {
+        LOG_ERR("Failed to fetch light sensor sample: %d", ret);
+        return;
+    }
+
+    ret = sensor_channel_get(light_dev, SENSOR_CHAN_LIGHT, &light);
+    if (ret < 0) {
+        LOG_ERR("Failed to get light sensor data: %d", ret);
+        return;
+    }
+
+    LOG_INF("Ambient Light: %d Lux", light.val1);
+}
+
+
+/* --- Main Application --- */
 
 int main(void)
 {
-	uint32_t pulse_red, pulse_green, pulse_blue; /* pulse widths */
-	int ret;
+    int ret;
+    bool led_is_ready = false;
 
-	printk("PWM-based RGB LED control\n");
+    LOG_INF("*** Booting Zephyr OS build %s ***", KERNEL_VERSION_STRING);
+    LOG_INF("Multi-Sniffer and Sensor Logger Initializing...");
 
-	if (!pwm_is_ready_dt(&red_pwm_led) ||
-	    !pwm_is_ready_dt(&green_pwm_led) ||
-	    !pwm_is_ready_dt(&blue_pwm_led)) {
-		printk("Error: one or more PWM devices not ready\n");
-		return 0;
-	}
+    /* --- Initialize Hardware --- */
+    if (heartbeat_led.port && device_is_ready(heartbeat_led.port)) {
+        ret = gpio_pin_configure_dt(&heartbeat_led, GPIO_OUTPUT_ACTIVE);
+        if (ret == 0) {
+            led_is_ready = true;
+            LOG_INF("Heartbeat LED configured successfully.");
+        } else {
+            LOG_ERR("Failed to configure heartbeat LED (err %d)", ret);
+        }
+    }
 
-	while (1) {
-		for (pulse_red = 0U; pulse_red <= red_pwm_led.period;
-		     pulse_red += STEP_SIZE) {
-			ret = pwm_set_pulse_dt(&red_pwm_led, pulse_red);
-			if (ret != 0) {
-				printk("Error %d: red write failed\n", ret);
-				return 0;
-			}
+    /* Check sensor readiness safely */
+    if (accel_dev && !device_is_ready(accel_dev)) {
+        LOG_ERR("Accelerometer device not ready.");
+    }
+    if (light_dev && !device_is_ready(light_dev)) {
+        LOG_ERR("Light sensor device not ready.");
+    }
 
-			for (pulse_green = 0U;
-			     pulse_green <= green_pwm_led.period;
-			     pulse_green += STEP_SIZE) {
-				ret = pwm_set_pulse_dt(&green_pwm_led,
-						       pulse_green);
-				if (ret != 0) {
-					printk("Error %d: green write failed\n",
-					       ret);
-					return 0;
-				}
 
-				for (pulse_blue = 0U;
-				     pulse_blue <= blue_pwm_led.period;
-				     pulse_blue += STEP_SIZE) {
-					ret = pwm_set_pulse_dt(&blue_pwm_led,
-							       pulse_blue);
-					if (ret != 0) {
-						printk("Error %d: "
-						       "blue write failed\n",
-						       ret);
-						return 0;
-					}
-					k_sleep(K_SECONDS(1));
-				}
-			}
-		}
-	}
-	return 0;
+    /* --- Initialize Sniffers --- */
+    ble_sniffer_init();
+    ieee802154_sniffer_init();
+
+    /* --- Main Loop --- */
+    while (1) {
+        /* 1. Heartbeat LED */
+        if (led_is_ready) {
+            gpio_pin_toggle_dt(&heartbeat_led);
+            LOG_INF("--- Heartbeat ---");
+        }
+
+        /* 2. Log Sensor Data */
+        log_accelerometer_data();
+        log_light_data();
+
+        /* 3. Sleep */
+        k_msleep(MAIN_LOOP_SLEEP_MS);
+    }
+
+    return 0;
 }

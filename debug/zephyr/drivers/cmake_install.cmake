@@ -74,6 +74,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+  include("C:/Users/cjwsa/Documents/Zephyr_Projects/mcxw71_sniffer/debug/zephyr/drivers/bluetooth/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
   include("C:/Users/cjwsa/Documents/Zephyr_Projects/mcxw71_sniffer/debug/zephyr/drivers/clock_control/cmake_install.cmake")
 endif()
 
@@ -84,7 +89,32 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+  include("C:/Users/cjwsa/Documents/Zephyr_Projects/mcxw71_sniffer/debug/zephyr/drivers/counter/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("C:/Users/cjwsa/Documents/Zephyr_Projects/mcxw71_sniffer/debug/zephyr/drivers/entropy/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("C:/Users/cjwsa/Documents/Zephyr_Projects/mcxw71_sniffer/debug/zephyr/drivers/flash/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
   include("C:/Users/cjwsa/Documents/Zephyr_Projects/mcxw71_sniffer/debug/zephyr/drivers/gpio/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("C:/Users/cjwsa/Documents/Zephyr_Projects/mcxw71_sniffer/debug/zephyr/drivers/i2c/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("C:/Users/cjwsa/Documents/Zephyr_Projects/mcxw71_sniffer/debug/zephyr/drivers/ieee802154/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
@@ -94,12 +124,17 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/cjwsa/Documents/Zephyr_Projects/mcxw71_sniffer/debug/zephyr/drivers/pwm/cmake_install.cmake")
+  include("C:/Users/cjwsa/Documents/Zephyr_Projects/mcxw71_sniffer/debug/zephyr/drivers/sensor/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
   include("C:/Users/cjwsa/Documents/Zephyr_Projects/mcxw71_sniffer/debug/zephyr/drivers/serial/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("C:/Users/cjwsa/Documents/Zephyr_Projects/mcxw71_sniffer/debug/zephyr/drivers/spi/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)

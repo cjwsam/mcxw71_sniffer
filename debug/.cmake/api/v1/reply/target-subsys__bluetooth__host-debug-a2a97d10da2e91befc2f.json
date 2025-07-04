@@ -1,0 +1,708 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "zephyr/subsys/bluetooth/host/libsubsys__bluetooth__host.a"
+		}
+	],
+	"backtrace" : 3,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"zephyr_library_named",
+			"zephyr_library",
+			"add_dependencies",
+			"add_compile_options",
+			"target_link_libraries",
+			"zephyr_library_link_libraries",
+			"zephyr_library_link_libraries_ifdef",
+			"target_sources",
+			"zephyr_library_sources",
+			"zephyr_library_sources_ifdef"
+		],
+		"files" : 
+		[
+			"G:/zephyr_v4_2_0_rc1/zephyr/cmake/modules/extensions.cmake",
+			"G:/zephyr_v4_2_0_rc1/zephyr/subsys/bluetooth/host/CMakeLists.txt",
+			"G:/zephyr_v4_2_0_rc1/zephyr/CMakeLists.txt",
+			"G:/zephyr_v4_2_0_rc1/zephyr/subsys/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 3,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 434,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 462,
+				"parent" : 2
+			},
+			{
+				"file" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 980,
+				"parent" : 4
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 1039,
+				"parent" : 4
+			},
+			{
+				"file" : 3
+			},
+			{
+				"command" : 4,
+				"file" : 3,
+				"line" : 12,
+				"parent" : 7
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 466,
+				"parent" : 2
+			},
+			{
+				"command" : 7,
+				"file" : 1,
+				"line" : 117,
+				"parent" : 0
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 2133,
+				"parent" : 10
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 541,
+				"parent" : 11
+			},
+			{
+				"command" : 9,
+				"file" : 1,
+				"line" : 16,
+				"parent" : 0
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 533,
+				"parent" : 13
+			},
+			{
+				"command" : 10,
+				"file" : 1,
+				"line" : 29,
+				"parent" : 0
+			},
+			{
+				"command" : 9,
+				"file" : 0,
+				"line" : 2061,
+				"parent" : 15
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 533,
+				"parent" : 16
+			},
+			{
+				"command" : 10,
+				"file" : 1,
+				"line" : 34,
+				"parent" : 0
+			},
+			{
+				"command" : 9,
+				"file" : 0,
+				"line" : 2061,
+				"parent" : 18
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 533,
+				"parent" : 19
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " -DUSE_RTOS=1 -g"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-Wshadow"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "-fno-strict-aliasing"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "-Os"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "-imacros"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "C:/Users/cjwsa/Documents/Zephyr_Projects/mcxw71_sniffer/debug/zephyr/include/generated/zephyr/autoconf.h"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "-fno-common"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "-g"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "-gdwarf-4"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "-fdiagnostics-color=always"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "-mcpu=cortex-m33"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "-mthumb"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "-mabi=aapcs"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "-mfp16-format=ieee"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "-mtp=soft"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "--sysroot=C:/Users/cjwsa/zephyr-sdk-0.17.0/arm-zephyr-eabi/arm-zephyr-eabi"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "-imacros"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "G:/zephyr_v4_2_0_rc1/zephyr/include/zephyr/toolchain/zephyr_stdint.h"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "-Wformat"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "-Wformat-security"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "-Wno-format-zero-length"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "-Wdouble-promotion"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "-Wno-pointer-sign"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "-Wpointer-arith"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "-Wexpansion-to-defined"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "-Wno-unused-but-set-variable"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "-Werror=implicit-int"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "-fno-pic"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "-fno-pie"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "-fno-asynchronous-unwind-tables"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "-ftls-model=local-exec"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "-fno-reorder-functions"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "--param=min-pagesize=0"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "-fno-defer-pop"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "-fmacro-prefix-map=C:/Users/cjwsa/Documents/Zephyr_Projects/mcxw71_sniffer=CMAKE_SOURCE_DIR"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "-fmacro-prefix-map=G:/zephyr_v4_2_0_rc1/zephyr=ZEPHYR_BASE"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "-fmacro-prefix-map=G:/zephyr_v4_2_0_rc1=WEST_TOPDIR"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "-ffunction-sections"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "-fdata-sections"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "-mcmse"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "-specs=picolibc.specs"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "-std=c99"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 9,
+					"define" : "CPU_MCXW716CMFTA"
+				},
+				{
+					"backtrace" : 9,
+					"define" : "HAL_RPMSG_SELECT_ROLE=0U"
+				},
+				{
+					"backtrace" : 9,
+					"define" : "KERNEL"
+				},
+				{
+					"backtrace" : 9,
+					"define" : "K_HEAP_MEM_POOL_SIZE=1024"
+				},
+				{
+					"backtrace" : 12,
+					"define" : "MBEDTLS_CONFIG_FILE=\"config-mbedtls.h\""
+				},
+				{
+					"backtrace" : 9,
+					"define" : "MEM_USE_ZEPHYR=1U"
+				},
+				{
+					"backtrace" : 9,
+					"define" : "NDEBUG"
+				},
+				{
+					"backtrace" : 9,
+					"define" : "OSA_USED=1U"
+				},
+				{
+					"backtrace" : 9,
+					"define" : "PICOLIBC_DOUBLE_PRINTF_SCANF"
+				},
+				{
+					"backtrace" : 9,
+					"define" : "SSCP_CONFIG_FILE=\"fsl_sscp_config_elemu.h\""
+				},
+				{
+					"backtrace" : 9,
+					"define" : "SSS_CONFIG_FILE=\"fsl_sss_config_elemu.h\""
+				},
+				{
+					"backtrace" : 9,
+					"define" : "USE_NBU=1"
+				},
+				{
+					"backtrace" : 9,
+					"define" : "__LINUX_ERRNO_EXTENSIONS__"
+				},
+				{
+					"backtrace" : 9,
+					"define" : "__PROGRAM_START"
+				},
+				{
+					"backtrace" : 9,
+					"define" : "__ZEPHYR__=1"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 9,
+					"path" : "C:/Users/cjwsa/Documents/Zephyr_Projects/mcxw71_sniffer/debug/zephyr/include/generated/zephyr"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "G:/zephyr_v4_2_0_rc1/zephyr/include"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "C:/Users/cjwsa/Documents/Zephyr_Projects/mcxw71_sniffer/debug/zephyr/include/generated"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "G:/zephyr_v4_2_0_rc1/zephyr/soc/nxp/mcx"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "G:/zephyr_v4_2_0_rc1/zephyr/soc/nxp/mcx/mcxw/."
+				},
+				{
+					"backtrace" : 9,
+					"path" : "G:/zephyr_v4_2_0_rc1/zephyr/subsys/bluetooth"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/hal/cmsis/CMSIS/Core/Include"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/hal/cmsis_6/CMSIS/Core/Include"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "G:/zephyr_v4_2_0_rc1/zephyr/modules/cmsis_6/."
+				},
+				{
+					"backtrace" : 9,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/hal/nxp/mcux/mcux-sdk-ng/drivers/common"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/hal/nxp/mcux/mcux-sdk-ng/components/osa/config"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/hal/nxp/mcux/mcux-sdk-ng/components/osa"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/hal/nxp/mcux/mcux-sdk-ng/components/lists"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/hal/nxp/mcux/mcux-sdk-ng/components/rpmsg"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/hal/nxp/mcux/mcux-sdk-ng/drivers/ccm32k"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/hal/nxp/mcux/mcux-sdk-ng/drivers/elemu"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/hal/nxp/mcux/mcux-sdk-ng/drivers/flash_k4"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/hal/nxp/mcux/mcux-sdk-ng/drivers/imu"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/hal/nxp/mcux/mcux-sdk-ng/drivers/lpi2c"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/hal/nxp/mcux/mcux-sdk-ng/drivers/lptmr"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/hal/nxp/mcux/mcux-sdk-ng/drivers/lpuart"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/hal/nxp/mcux/mcux-sdk-ng/drivers/port"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/hal/nxp/mcux/mcux-sdk-ng/drivers/rtc"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/hal/nxp/mcux/mcux-sdk-ng/drivers/spc"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/hal/nxp/mcux/mcux-sdk-ng/devices/MCX/MCXW/MCXW716C"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/hal/nxp/mcux/mcux-sdk-ng/devices/MCX/MCXW/periph2"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/hal/nxp/mcux/mcux-sdk-ng/devices/MCX/MCXW/MCXW716C/drivers"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/hal/nxp/mcux/middleware/mcux-sdk-middleware-connectivity-framework/Common"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/hal/nxp/mcux/middleware/mcux-sdk-middleware-connectivity-framework/platform/connected_mcu"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/hal/nxp/mcux/middleware/mcux-sdk-middleware-connectivity-framework/platform/connected_mcu/configs"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/hal/nxp/mcux/middleware/mcux-sdk-middleware-multicore/mcmgr/src"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/hal/nxp/mcux/middleware/mcux-sdk-middleware-multicore/rpmsg_lite/lib/include"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/hal/nxp/mcux/middleware/mcux-sdk-middleware-multicore/rpmsg_lite/lib/include/platform/kw45b41"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/hal/nxp/mcux/middleware/mcux-sdk-middleware-multicore/rpmsg_lite/lib/include/environment/zephyr"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/hal/nxp/mcux/middleware/mcux-sdk-middleware-ieee_802.15.4/ieee_802_15_4/phy/interface"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/hal/nxp/mcux/middleware/mcux-secure-subsystem/inc"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/hal/nxp/mcux/middleware/mcux-secure-subsystem/inc/elemu"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/hal/nxp/mcux/middleware/mcux-secure-subsystem/port/kw45_k4w1"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/hal/ti/mspm0/source/ti/devices/msp/."
+				},
+				{
+					"backtrace" : 9,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/hal/ti/mspm0/source/ti/devices/msp/m0p"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/hal/ti/mspm0/source/ti/devices/msp/peripherals"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/hal/ti/mspm0/source/ti/devices/msp/peripherals/m0p"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/hal/ti/mspm0/source/ti/devices/msp/peripherals/m0p/sysctl"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/crypto/mbedtls/include"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "G:/zephyr_v4_2_0_rc1/zephyr/modules/mbedtls/configs"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "G:/zephyr_v4_2_0_rc1/zephyr/modules/mbedtls/include"
+				},
+				{
+					"backtrace" : 9,
+					"isSystem" : true,
+					"path" : "G:/zephyr_v4_2_0_rc1/zephyr/lib/libc/common/include"
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 5,
+			"id" : "syscall_list_h_target::@d36e55b69c1b90fb26b2"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "kobj_types_h_target::@d36e55b69c1b90fb26b2"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "device_api_ld_target::@d36e55b69c1b90fb26b2"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "zephyr_generated_headers::@d36e55b69c1b90fb26b2"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "driver_validation_h_target::@d36e55b69c1b90fb26b2"
+		}
+	],
+	"id" : "subsys__bluetooth__host::@7fe7124b9b826e7790aa",
+	"name" : "subsys__bluetooth__host",
+	"nameOnDisk" : "libsubsys__bluetooth__host.a",
+	"paths" : 
+	{
+		"build" : "zephyr/subsys/bluetooth/host",
+		"source" : "G:/zephyr_v4_2_0_rc1/zephyr/subsys/bluetooth/host"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 14,
+			"compileGroupIndex" : 0,
+			"path" : "G:/zephyr_v4_2_0_rc1/zephyr/subsys/bluetooth/host/uuid.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 14,
+			"compileGroupIndex" : 0,
+			"path" : "G:/zephyr_v4_2_0_rc1/zephyr/subsys/bluetooth/host/addr.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 14,
+			"compileGroupIndex" : 0,
+			"path" : "G:/zephyr_v4_2_0_rc1/zephyr/subsys/bluetooth/host/buf.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 14,
+			"compileGroupIndex" : 0,
+			"path" : "G:/zephyr_v4_2_0_rc1/zephyr/subsys/bluetooth/host/data.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 14,
+			"compileGroupIndex" : 0,
+			"path" : "G:/zephyr_v4_2_0_rc1/zephyr/subsys/bluetooth/host/hci_core.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 14,
+			"compileGroupIndex" : 0,
+			"path" : "G:/zephyr_v4_2_0_rc1/zephyr/subsys/bluetooth/host/hci_common.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 14,
+			"compileGroupIndex" : 0,
+			"path" : "G:/zephyr_v4_2_0_rc1/zephyr/subsys/bluetooth/host/id.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 17,
+			"compileGroupIndex" : 0,
+			"path" : "G:/zephyr_v4_2_0_rc1/zephyr/subsys/bluetooth/host/scan.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 20,
+			"compileGroupIndex" : 0,
+			"path" : "G:/zephyr_v4_2_0_rc1/zephyr/subsys/bluetooth/host/crypto_psa.c",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

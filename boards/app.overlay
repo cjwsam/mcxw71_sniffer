@@ -1,0 +1,22 @@
+
+/ {
+    aliases {
+        led0 = &led_0;
+        fxos8700 = &fxos8700_accel;
+        tsl2591 = &tsl2591;
+    };
+};
+
+&i2c0 { // Or the I2C bus your sensors are on
+    fxos8700_accel: fxos8700@1e {
+        compatible = "nxp,fxos8700";
+        reg = <0x1e>;
+        label = "FXOS8700_ACCEL";
+    };
+
+    tsl2591: tsl2591@29 {
+        compatible = "ams,tsl2591";
+        reg = <0x29>;
+        label = "TSL2591";
+    };
+};

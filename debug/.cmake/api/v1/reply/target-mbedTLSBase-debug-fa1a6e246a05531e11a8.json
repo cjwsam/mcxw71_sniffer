@@ -1,0 +1,1066 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "modules/mbedtls/libmbedTLSBase.a"
+		}
+	],
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"zephyr_library_named",
+			"add_dependencies",
+			"target_link_libraries",
+			"zephyr_library_link_libraries",
+			"target_sources",
+			"zephyr_library_sources"
+		],
+		"files" : 
+		[
+			"G:/zephyr_v4_2_0_rc1/zephyr/cmake/modules/extensions.cmake",
+			"G:/zephyr_v4_2_0_rc1/zephyr/modules/mbedtls/CMakeLists.txt",
+			"G:/zephyr_v4_2_0_rc1/zephyr/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 54,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 462,
+				"parent" : 1
+			},
+			{
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 980,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 1039,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 466,
+				"parent" : 1
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 136,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 541,
+				"parent" : 7
+			},
+			{
+				"command" : 6,
+				"file" : 1,
+				"line" : 122,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 533,
+				"parent" : 9
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " -DUSE_RTOS=1 -g"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-fno-strict-aliasing"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-Os"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-imacros"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "C:/Users/cjwsa/Documents/Zephyr_Projects/mcxw71_sniffer/debug/zephyr/include/generated/zephyr/autoconf.h"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-fno-common"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-g"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-gdwarf-4"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-fdiagnostics-color=always"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-mcpu=cortex-m33"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-mthumb"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-mabi=aapcs"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-mfp16-format=ieee"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-mtp=soft"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "--sysroot=C:/Users/cjwsa/zephyr-sdk-0.17.0/arm-zephyr-eabi/arm-zephyr-eabi"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-imacros"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "G:/zephyr_v4_2_0_rc1/zephyr/include/zephyr/toolchain/zephyr_stdint.h"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-Wformat"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-Wformat-security"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-Wno-format-zero-length"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-Wdouble-promotion"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-Wno-pointer-sign"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-Wpointer-arith"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-Wexpansion-to-defined"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-Wno-unused-but-set-variable"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-Werror=implicit-int"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-fno-pic"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-fno-pie"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-fno-asynchronous-unwind-tables"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-ftls-model=local-exec"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-fno-reorder-functions"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "--param=min-pagesize=0"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-fno-defer-pop"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-fmacro-prefix-map=C:/Users/cjwsa/Documents/Zephyr_Projects/mcxw71_sniffer=CMAKE_SOURCE_DIR"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-fmacro-prefix-map=G:/zephyr_v4_2_0_rc1/zephyr=ZEPHYR_BASE"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-fmacro-prefix-map=G:/zephyr_v4_2_0_rc1=WEST_TOPDIR"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-ffunction-sections"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-fdata-sections"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-mcmse"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-specs=picolibc.specs"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-std=c99"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 6,
+					"define" : "CPU_MCXW716CMFTA"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "HAL_RPMSG_SELECT_ROLE=0U"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "KERNEL"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "K_HEAP_MEM_POOL_SIZE=1024"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "MBEDTLS_CONFIG_FILE=\"config-mbedtls.h\""
+				},
+				{
+					"backtrace" : 6,
+					"define" : "MEM_USE_ZEPHYR=1U"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "NDEBUG"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "OSA_USED=1U"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "PICOLIBC_DOUBLE_PRINTF_SCANF"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "SSCP_CONFIG_FILE=\"fsl_sscp_config_elemu.h\""
+				},
+				{
+					"backtrace" : 6,
+					"define" : "SSS_CONFIG_FILE=\"fsl_sss_config_elemu.h\""
+				},
+				{
+					"backtrace" : 6,
+					"define" : "USE_NBU=1"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "__LINUX_ERRNO_EXTENSIONS__"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "__PROGRAM_START"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "__ZEPHYR__=1"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 6,
+					"path" : "C:/Users/cjwsa/Documents/Zephyr_Projects/mcxw71_sniffer/debug/zephyr/include/generated/zephyr"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "G:/zephyr_v4_2_0_rc1/zephyr/include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/Users/cjwsa/Documents/Zephyr_Projects/mcxw71_sniffer/debug/zephyr/include/generated"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "G:/zephyr_v4_2_0_rc1/zephyr/soc/nxp/mcx"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "G:/zephyr_v4_2_0_rc1/zephyr/soc/nxp/mcx/mcxw/."
+				},
+				{
+					"backtrace" : 6,
+					"path" : "G:/zephyr_v4_2_0_rc1/zephyr/subsys/bluetooth"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/hal/cmsis/CMSIS/Core/Include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/hal/cmsis_6/CMSIS/Core/Include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "G:/zephyr_v4_2_0_rc1/zephyr/modules/cmsis_6/."
+				},
+				{
+					"backtrace" : 6,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/hal/nxp/mcux/mcux-sdk-ng/drivers/common"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/hal/nxp/mcux/mcux-sdk-ng/components/osa/config"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/hal/nxp/mcux/mcux-sdk-ng/components/osa"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/hal/nxp/mcux/mcux-sdk-ng/components/lists"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/hal/nxp/mcux/mcux-sdk-ng/components/rpmsg"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/hal/nxp/mcux/mcux-sdk-ng/drivers/ccm32k"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/hal/nxp/mcux/mcux-sdk-ng/drivers/elemu"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/hal/nxp/mcux/mcux-sdk-ng/drivers/flash_k4"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/hal/nxp/mcux/mcux-sdk-ng/drivers/imu"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/hal/nxp/mcux/mcux-sdk-ng/drivers/lpi2c"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/hal/nxp/mcux/mcux-sdk-ng/drivers/lptmr"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/hal/nxp/mcux/mcux-sdk-ng/drivers/lpuart"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/hal/nxp/mcux/mcux-sdk-ng/drivers/port"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/hal/nxp/mcux/mcux-sdk-ng/drivers/rtc"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/hal/nxp/mcux/mcux-sdk-ng/drivers/spc"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/hal/nxp/mcux/mcux-sdk-ng/devices/MCX/MCXW/MCXW716C"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/hal/nxp/mcux/mcux-sdk-ng/devices/MCX/MCXW/periph2"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/hal/nxp/mcux/mcux-sdk-ng/devices/MCX/MCXW/MCXW716C/drivers"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/hal/nxp/mcux/middleware/mcux-sdk-middleware-connectivity-framework/Common"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/hal/nxp/mcux/middleware/mcux-sdk-middleware-connectivity-framework/platform/connected_mcu"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/hal/nxp/mcux/middleware/mcux-sdk-middleware-connectivity-framework/platform/connected_mcu/configs"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/hal/nxp/mcux/middleware/mcux-sdk-middleware-multicore/mcmgr/src"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/hal/nxp/mcux/middleware/mcux-sdk-middleware-multicore/rpmsg_lite/lib/include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/hal/nxp/mcux/middleware/mcux-sdk-middleware-multicore/rpmsg_lite/lib/include/platform/kw45b41"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/hal/nxp/mcux/middleware/mcux-sdk-middleware-multicore/rpmsg_lite/lib/include/environment/zephyr"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/hal/nxp/mcux/middleware/mcux-sdk-middleware-ieee_802.15.4/ieee_802_15_4/phy/interface"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/hal/nxp/mcux/middleware/mcux-secure-subsystem/inc"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/hal/nxp/mcux/middleware/mcux-secure-subsystem/inc/elemu"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/hal/nxp/mcux/middleware/mcux-secure-subsystem/port/kw45_k4w1"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/hal/ti/mspm0/source/ti/devices/msp/."
+				},
+				{
+					"backtrace" : 6,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/hal/ti/mspm0/source/ti/devices/msp/m0p"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/hal/ti/mspm0/source/ti/devices/msp/peripherals"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/hal/ti/mspm0/source/ti/devices/msp/peripherals/m0p"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/hal/ti/mspm0/source/ti/devices/msp/peripherals/m0p/sysctl"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "G:/zephyr_v4_2_0_rc1/modules/crypto/mbedtls/include"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "G:/zephyr_v4_2_0_rc1/zephyr/modules/mbedtls/configs"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "G:/zephyr_v4_2_0_rc1/zephyr/modules/mbedtls/include"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "G:/zephyr_v4_2_0_rc1/zephyr/lib/libc/common/include"
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58,
+				59,
+				60,
+				61
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 4,
+			"id" : "syscall_list_h_target::@d36e55b69c1b90fb26b2"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "kobj_types_h_target::@d36e55b69c1b90fb26b2"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "device_api_ld_target::@d36e55b69c1b90fb26b2"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "zephyr_generated_headers::@d36e55b69c1b90fb26b2"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "driver_validation_h_target::@d36e55b69c1b90fb26b2"
+		}
+	],
+	"id" : "mbedTLSBase::@d88b8328ac26e0363190",
+	"name" : "mbedTLSBase",
+	"nameOnDisk" : "libmbedTLSBase.a",
+	"paths" : 
+	{
+		"build" : "modules/mbedtls",
+		"source" : "G:/zephyr_v4_2_0_rc1/zephyr/modules/mbedtls"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58,
+				59,
+				60,
+				61
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 10,
+			"compileGroupIndex" : 0,
+			"path" : "G:/zephyr_v4_2_0_rc1/modules/crypto/mbedtls/library/aes.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 10,
+			"compileGroupIndex" : 0,
+			"path" : "G:/zephyr_v4_2_0_rc1/modules/crypto/mbedtls/library/aesni.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 10,
+			"compileGroupIndex" : 0,
+			"path" : "G:/zephyr_v4_2_0_rc1/modules/crypto/mbedtls/library/aria.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 10,
+			"compileGroupIndex" : 0,
+			"path" : "G:/zephyr_v4_2_0_rc1/modules/crypto/mbedtls/library/asn1parse.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 10,
+			"compileGroupIndex" : 0,
+			"path" : "G:/zephyr_v4_2_0_rc1/modules/crypto/mbedtls/library/asn1write.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 10,
+			"compileGroupIndex" : 0,
+			"path" : "G:/zephyr_v4_2_0_rc1/modules/crypto/mbedtls/library/base64.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 10,
+			"compileGroupIndex" : 0,
+			"path" : "G:/zephyr_v4_2_0_rc1/modules/crypto/mbedtls/library/bignum_core.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 10,
+			"compileGroupIndex" : 0,
+			"path" : "G:/zephyr_v4_2_0_rc1/modules/crypto/mbedtls/library/bignum_mod_raw.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 10,
+			"compileGroupIndex" : 0,
+			"path" : "G:/zephyr_v4_2_0_rc1/modules/crypto/mbedtls/library/bignum_mod.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 10,
+			"compileGroupIndex" : 0,
+			"path" : "G:/zephyr_v4_2_0_rc1/modules/crypto/mbedtls/library/bignum.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 10,
+			"compileGroupIndex" : 0,
+			"path" : "G:/zephyr_v4_2_0_rc1/modules/crypto/mbedtls/library/block_cipher.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 10,
+			"compileGroupIndex" : 0,
+			"path" : "G:/zephyr_v4_2_0_rc1/modules/crypto/mbedtls/library/camellia.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 10,
+			"compileGroupIndex" : 0,
+			"path" : "G:/zephyr_v4_2_0_rc1/modules/crypto/mbedtls/library/ccm.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 10,
+			"compileGroupIndex" : 0,
+			"path" : "G:/zephyr_v4_2_0_rc1/modules/crypto/mbedtls/library/chacha20.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 10,
+			"compileGroupIndex" : 0,
+			"path" : "G:/zephyr_v4_2_0_rc1/modules/crypto/mbedtls/library/chachapoly.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 10,
+			"compileGroupIndex" : 0,
+			"path" : "G:/zephyr_v4_2_0_rc1/modules/crypto/mbedtls/library/cipher_wrap.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 10,
+			"compileGroupIndex" : 0,
+			"path" : "G:/zephyr_v4_2_0_rc1/modules/crypto/mbedtls/library/cipher.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 10,
+			"compileGroupIndex" : 0,
+			"path" : "G:/zephyr_v4_2_0_rc1/modules/crypto/mbedtls/library/cmac.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 10,
+			"compileGroupIndex" : 0,
+			"path" : "G:/zephyr_v4_2_0_rc1/modules/crypto/mbedtls/library/constant_time.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 10,
+			"compileGroupIndex" : 0,
+			"path" : "G:/zephyr_v4_2_0_rc1/modules/crypto/mbedtls/library/ctr_drbg.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 10,
+			"compileGroupIndex" : 0,
+			"path" : "G:/zephyr_v4_2_0_rc1/modules/crypto/mbedtls/library/debug.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 10,
+			"compileGroupIndex" : 0,
+			"path" : "G:/zephyr_v4_2_0_rc1/modules/crypto/mbedtls/library/des.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 10,
+			"compileGroupIndex" : 0,
+			"path" : "G:/zephyr_v4_2_0_rc1/modules/crypto/mbedtls/library/dhm.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 10,
+			"compileGroupIndex" : 0,
+			"path" : "G:/zephyr_v4_2_0_rc1/modules/crypto/mbedtls/library/ecdh.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 10,
+			"compileGroupIndex" : 0,
+			"path" : "G:/zephyr_v4_2_0_rc1/modules/crypto/mbedtls/library/ecdsa.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 10,
+			"compileGroupIndex" : 0,
+			"path" : "G:/zephyr_v4_2_0_rc1/modules/crypto/mbedtls/library/ecjpake.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 10,
+			"compileGroupIndex" : 0,
+			"path" : "G:/zephyr_v4_2_0_rc1/modules/crypto/mbedtls/library/ecp_curves_new.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 10,
+			"compileGroupIndex" : 0,
+			"path" : "G:/zephyr_v4_2_0_rc1/modules/crypto/mbedtls/library/ecp_curves.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 10,
+			"compileGroupIndex" : 0,
+			"path" : "G:/zephyr_v4_2_0_rc1/modules/crypto/mbedtls/library/ecp.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 10,
+			"compileGroupIndex" : 0,
+			"path" : "G:/zephyr_v4_2_0_rc1/modules/crypto/mbedtls/library/entropy_poll.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 10,
+			"compileGroupIndex" : 0,
+			"path" : "G:/zephyr_v4_2_0_rc1/modules/crypto/mbedtls/library/entropy.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 10,
+			"compileGroupIndex" : 0,
+			"path" : "G:/zephyr_v4_2_0_rc1/modules/crypto/mbedtls/library/error.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 10,
+			"compileGroupIndex" : 0,
+			"path" : "G:/zephyr_v4_2_0_rc1/modules/crypto/mbedtls/library/gcm.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 10,
+			"compileGroupIndex" : 0,
+			"path" : "G:/zephyr_v4_2_0_rc1/modules/crypto/mbedtls/library/hkdf.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 10,
+			"compileGroupIndex" : 0,
+			"path" : "G:/zephyr_v4_2_0_rc1/modules/crypto/mbedtls/library/hmac_drbg.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 10,
+			"compileGroupIndex" : 0,
+			"path" : "G:/zephyr_v4_2_0_rc1/modules/crypto/mbedtls/library/lmots.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 10,
+			"compileGroupIndex" : 0,
+			"path" : "G:/zephyr_v4_2_0_rc1/modules/crypto/mbedtls/library/lms.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 10,
+			"compileGroupIndex" : 0,
+			"path" : "G:/zephyr_v4_2_0_rc1/modules/crypto/mbedtls/library/md.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 10,
+			"compileGroupIndex" : 0,
+			"path" : "G:/zephyr_v4_2_0_rc1/modules/crypto/mbedtls/library/md5.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 10,
+			"compileGroupIndex" : 0,
+			"path" : "G:/zephyr_v4_2_0_rc1/modules/crypto/mbedtls/library/memory_buffer_alloc.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 10,
+			"compileGroupIndex" : 0,
+			"path" : "G:/zephyr_v4_2_0_rc1/modules/crypto/mbedtls/library/mps_reader.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 10,
+			"compileGroupIndex" : 0,
+			"path" : "G:/zephyr_v4_2_0_rc1/modules/crypto/mbedtls/library/mps_trace.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 10,
+			"compileGroupIndex" : 0,
+			"path" : "G:/zephyr_v4_2_0_rc1/modules/crypto/mbedtls/library/nist_kw.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 10,
+			"compileGroupIndex" : 0,
+			"path" : "G:/zephyr_v4_2_0_rc1/modules/crypto/mbedtls/library/oid.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 10,
+			"compileGroupIndex" : 0,
+			"path" : "G:/zephyr_v4_2_0_rc1/modules/crypto/mbedtls/library/padlock.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 10,
+			"compileGroupIndex" : 0,
+			"path" : "G:/zephyr_v4_2_0_rc1/modules/crypto/mbedtls/library/platform_util.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 10,
+			"compileGroupIndex" : 0,
+			"path" : "G:/zephyr_v4_2_0_rc1/modules/crypto/mbedtls/library/platform.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 10,
+			"compileGroupIndex" : 0,
+			"path" : "G:/zephyr_v4_2_0_rc1/modules/crypto/mbedtls/library/poly1305.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 10,
+			"compileGroupIndex" : 0,
+			"path" : "G:/zephyr_v4_2_0_rc1/modules/crypto/mbedtls/library/psa_util.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 10,
+			"compileGroupIndex" : 0,
+			"path" : "G:/zephyr_v4_2_0_rc1/modules/crypto/mbedtls/library/ripemd160.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 10,
+			"compileGroupIndex" : 0,
+			"path" : "G:/zephyr_v4_2_0_rc1/modules/crypto/mbedtls/library/rsa_alt_helpers.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 10,
+			"compileGroupIndex" : 0,
+			"path" : "G:/zephyr_v4_2_0_rc1/modules/crypto/mbedtls/library/rsa.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 10,
+			"compileGroupIndex" : 0,
+			"path" : "G:/zephyr_v4_2_0_rc1/modules/crypto/mbedtls/library/sha1.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 10,
+			"compileGroupIndex" : 0,
+			"path" : "G:/zephyr_v4_2_0_rc1/modules/crypto/mbedtls/library/sha256.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 10,
+			"compileGroupIndex" : 0,
+			"path" : "G:/zephyr_v4_2_0_rc1/modules/crypto/mbedtls/library/sha512.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 10,
+			"compileGroupIndex" : 0,
+			"path" : "G:/zephyr_v4_2_0_rc1/modules/crypto/mbedtls/library/sha3.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 10,
+			"compileGroupIndex" : 0,
+			"path" : "G:/zephyr_v4_2_0_rc1/modules/crypto/mbedtls/library/threading.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 10,
+			"compileGroupIndex" : 0,
+			"path" : "G:/zephyr_v4_2_0_rc1/modules/crypto/mbedtls/library/timing.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 10,
+			"compileGroupIndex" : 0,
+			"path" : "G:/zephyr_v4_2_0_rc1/modules/crypto/mbedtls/library/version_features.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 10,
+			"compileGroupIndex" : 0,
+			"path" : "G:/zephyr_v4_2_0_rc1/modules/crypto/mbedtls/library/version.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 10,
+			"compileGroupIndex" : 0,
+			"path" : "G:/zephyr_v4_2_0_rc1/zephyr/modules/mbedtls/zephyr_init.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 10,
+			"compileGroupIndex" : 0,
+			"path" : "G:/zephyr_v4_2_0_rc1/zephyr/modules/mbedtls/zephyr_entropy.c",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}
