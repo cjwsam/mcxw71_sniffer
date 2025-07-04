@@ -6,7 +6,7 @@
   "multicoreType": "none",
   "projectType": "zephyr-freestanding",
   "sdk": {
-    "version": "4.1.0",
-    "path": "g:\\zephyr_v4_1_0"
+    "path": "g:\\zephyr_v4_1_0",
+    "version": ""
   }
 }

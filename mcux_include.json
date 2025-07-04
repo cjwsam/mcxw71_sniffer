@@ -10,7 +10,7 @@
       "hidden": true,
       "environment": {
         "ZEPHYR_BASE": "g:/zephyr_v4_1_0/zephyr",
-        "ZEPHYR_SDK_INSTALL_DIR": "C:/Users/cjwsa/zephyr-sdk-0.17.0/arm-zephyr-eabi/../",
+        "ZEPHYR_SDK_INSTALL_DIR": "C:/Users/cjwsa/zephyr-sdk-0.17.0",
         "MCUX_VENV_PATH": "C:/Users/cjwsa/.mcuxpressotools/.venv/Scripts",
         "PATH": "$env{MCUX_VENV_PATH}${pathListSep}$penv{PATH}"
       },
@@ -22,7 +22,7 @@
       "hidden": true,
       "environment": {
         "ZEPHYR_BASE": "g:/zephyr_v4_1_0/zephyr",
-        "ZEPHYR_SDK_INSTALL_DIR": "C:/Users/cjwsa/zephyr-sdk-0.17.0/arm-zephyr-eabi/../",
+        "ZEPHYR_SDK_INSTALL_DIR": "C:/Users/cjwsa/zephyr-sdk-0.17.0",
         "MCUX_VENV_PATH": "C:/Users/cjwsa/.mcuxpressotools/.venv/Scripts",
         "PATH": "$env{MCUX_VENV_PATH}${pathListSep}$penv{PATH}"
       },
