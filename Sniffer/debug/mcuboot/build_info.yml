@@ -1,0 +1,54 @@
+cmake:
+  application:
+    configuration-dir: G:/zephyr_v4_1_0/bootloader/mcuboot/boot/zephyr
+    source-dir: G:/zephyr_v4_1_0/bootloader/mcuboot/boot/zephyr
+  board:
+    name: frdm_mcxw71
+    path:
+     - G:/zephyr_v4_1_0/zephyr/boards/nxp/frdm_mcxw71
+    qualifiers: mcxw716c
+    revision: 
+  devicetree:
+    bindings-dirs:
+     - G:/zephyr_v4_1_0/zephyr/dts/bindings
+    files:
+     - G:/zephyr_v4_1_0/zephyr/boards/nxp/frdm_mcxw71/frdm_mcxw71.dts
+     - G:/zephyr_v4_1_0/bootloader/mcuboot/boot/zephyr/app.overlay
+    include-dirs:
+     - G:/zephyr_v4_1_0/modules/hal/atmel/include
+     - G:/zephyr_v4_1_0/modules/hal/gigadevice/include
+     - G:/zephyr_v4_1_0/modules/hal/microchip/include
+     - G:/zephyr_v4_1_0/modules/hal/microchip/dts
+     - G:/zephyr_v4_1_0/modules/hal/nuvoton/dts
+     - G:/zephyr_v4_1_0/modules/hal/nxp/dts
+     - G:/zephyr_v4_1_0/modules/hal/stm32/dts
+     - G:/zephyr_v4_1_0/bootloader/mcuboot/boot/zephyr/include
+     - G:/zephyr_v4_1_0/zephyr/include
+     - G:/zephyr_v4_1_0/zephyr/include/zephyr
+     - G:/zephyr_v4_1_0/zephyr/dts/common
+     - G:/zephyr_v4_1_0/zephyr/dts/x86
+     - G:/zephyr_v4_1_0/zephyr/dts/xtensa
+     - G:/zephyr_v4_1_0/zephyr/dts/sparc
+     - G:/zephyr_v4_1_0/zephyr/dts/riscv
+     - G:/zephyr_v4_1_0/zephyr/dts/posix
+     - G:/zephyr_v4_1_0/zephyr/dts/nios2
+     - G:/zephyr_v4_1_0/zephyr/dts/arm64
+     - G:/zephyr_v4_1_0/zephyr/dts/arm
+     - G:/zephyr_v4_1_0/zephyr/dts/arc
+     - G:/zephyr_v4_1_0/zephyr/dts
+    user-files:
+     - G:/zephyr_v4_1_0/bootloader/mcuboot/boot/zephyr/app.overlay
+  kconfig:
+    files:
+     - G:/zephyr_v4_1_0/zephyr/boards/nxp/frdm_mcxw71/frdm_mcxw71_defconfig
+     - G:/zephyr_v4_1_0/bootloader/mcuboot/boot/zephyr/prj.conf
+     - C:/Users/cjwsa/Documents/Zephyr_Projects/mcxw71_sniffer/Sniffer/debug/mcuboot/zephyr/.config.sysbuild
+    user-files:
+     - G:/zephyr_v4_1_0/bootloader/mcuboot/boot/zephyr/prj.conf
+  toolchain:
+    name: zephyr
+    path: C:/Users/cjwsa/zephyr-sdk-0.17.0
+  zephyr:
+    version: 4.1.0
+    zephyr-base: G:/zephyr_v4_1_0/zephyr
+version: 0.1.0

@@ -1,0 +1,803 @@
+# 0 "G:/zephyr_v4_1_0/zephyr/misc/empty_file.c"
+# 0 "<built-in>"
+# 0 "<command-line>"
+# 1 "G:/zephyr_v4_1_0/zephyr/boards/nxp/frdm_mcxw71/frdm_mcxw71.dts" 1
+
+
+
+
+
+/dts-v1/;
+
+# 1 "G:/zephyr_v4_1_0/zephyr/dts/arm/nxp/nxp_mcxw71.dtsi" 1 3 4
+
+
+
+
+
+
+# 1 "G:/zephyr_v4_1_0/zephyr/dts/arm/nxp/nxp_mcxw7x_common.dtsi" 1 3 4
+
+
+
+
+
+
+# 1 "G:/zephyr_v4_1_0/zephyr/dts/common/mem.h" 1 3 4
+# 8 "G:/zephyr_v4_1_0/zephyr/dts/arm/nxp/nxp_mcxw7x_common.dtsi" 2 3 4
+# 1 "G:/zephyr_v4_1_0/zephyr/dts/arm/armv8-m.dtsi" 1 3 4
+
+
+# 1 "G:/zephyr_v4_1_0/zephyr/dts/common/skeleton.dtsi" 1 3 4
+# 9 "G:/zephyr_v4_1_0/zephyr/dts/common/skeleton.dtsi" 3 4
+/ {
+ #address-cells = <1>;
+ #size-cells = <1>;
+ chosen { };
+ aliases { };
+};
+# 4 "G:/zephyr_v4_1_0/zephyr/dts/arm/armv8-m.dtsi" 2 3 4
+
+/ {
+ soc {
+  #address-cells = <1>;
+  #size-cells = <1>;
+  compatible = "simple-bus";
+  interrupt-parent = <&nvic>;
+  ranges;
+
+  nvic: interrupt-controller@e000e100 {
+   #address-cells = <1>;
+   compatible = "arm,v8m-nvic";
+   reg = <0xe000e100 0xc00>;
+   interrupt-controller;
+   #interrupt-cells = <2>;
+  };
+
+  systick: timer@e000e010 {
+   compatible = "arm,armv8m-systick";
+   reg = <0xe000e010 0x10>;
+  };
+ };
+};
+# 9 "G:/zephyr_v4_1_0/zephyr/dts/arm/nxp/nxp_mcxw7x_common.dtsi" 2 3 4
+# 1 "G:/zephyr_v4_1_0/zephyr/include/zephyr/dt-bindings/clock/scg_k4.h" 1 3 4
+# 10 "G:/zephyr_v4_1_0/zephyr/dts/arm/nxp/nxp_mcxw7x_common.dtsi" 2 3 4
+# 1 "G:/zephyr_v4_1_0/zephyr/include/zephyr/dt-bindings/gpio/gpio.h" 1 3 4
+# 11 "G:/zephyr_v4_1_0/zephyr/dts/arm/nxp/nxp_mcxw7x_common.dtsi" 2 3 4
+# 1 "G:/zephyr_v4_1_0/zephyr/include/zephyr/dt-bindings/pwm/pwm.h" 1 3 4
+# 12 "G:/zephyr_v4_1_0/zephyr/dts/arm/nxp/nxp_mcxw7x_common.dtsi" 2 3 4
+# 1 "G:/zephyr_v4_1_0/zephyr/include/zephyr/dt-bindings/i2c/i2c.h" 1 3 4
+# 13 "G:/zephyr_v4_1_0/zephyr/dts/arm/nxp/nxp_mcxw7x_common.dtsi" 2 3 4
+# 1 "G:/zephyr_v4_1_0/zephyr/include/zephyr/dt-bindings/memory-attr/memory-attr-arm.h" 1 3 4
+# 9 "G:/zephyr_v4_1_0/zephyr/include/zephyr/dt-bindings/memory-attr/memory-attr-arm.h" 3 4
+# 1 "G:/zephyr_v4_1_0/zephyr/include/zephyr/sys/util_macro.h" 1 3 4
+# 34 "G:/zephyr_v4_1_0/zephyr/include/zephyr/sys/util_macro.h" 3 4
+# 1 "G:/zephyr_v4_1_0/zephyr/include/zephyr/sys/util_internal.h" 1 3 4
+# 18 "G:/zephyr_v4_1_0/zephyr/include/zephyr/sys/util_internal.h" 3 4
+# 1 "G:/zephyr_v4_1_0/zephyr/include/zephyr/sys/util_loops.h" 1 3 4
+# 1083 "G:/zephyr_v4_1_0/zephyr/include/zephyr/sys/util_loops.h" 3 4
+# 1 "G:/zephyr_v4_1_0/zephyr/include/zephyr/sys/util_listify.h" 1 3 4
+# 1084 "G:/zephyr_v4_1_0/zephyr/include/zephyr/sys/util_loops.h" 2 3 4
+# 19 "G:/zephyr_v4_1_0/zephyr/include/zephyr/sys/util_internal.h" 2 3 4
+# 162 "G:/zephyr_v4_1_0/zephyr/include/zephyr/sys/util_internal.h" 3 4
+# 1 "G:/zephyr_v4_1_0/zephyr/include/zephyr/sys/util_internal_is_eq.h" 1 3 4
+# 163 "G:/zephyr_v4_1_0/zephyr/include/zephyr/sys/util_internal.h" 2 3 4
+# 193 "G:/zephyr_v4_1_0/zephyr/include/zephyr/sys/util_internal.h" 3 4
+# 1 "G:/zephyr_v4_1_0/zephyr/include/zephyr/sys/util_internal_util_inc.h" 1 3 4
+# 194 "G:/zephyr_v4_1_0/zephyr/include/zephyr/sys/util_internal.h" 2 3 4
+
+
+# 1 "G:/zephyr_v4_1_0/zephyr/include/zephyr/sys/util_internal_util_dec.h" 1 3 4
+# 197 "G:/zephyr_v4_1_0/zephyr/include/zephyr/sys/util_internal.h" 2 3 4
+
+
+# 1 "G:/zephyr_v4_1_0/zephyr/include/zephyr/sys/util_internal_util_x2.h" 1 3 4
+# 200 "G:/zephyr_v4_1_0/zephyr/include/zephyr/sys/util_internal.h" 2 3 4
+# 35 "G:/zephyr_v4_1_0/zephyr/include/zephyr/sys/util_macro.h" 2 3 4
+# 10 "G:/zephyr_v4_1_0/zephyr/include/zephyr/dt-bindings/memory-attr/memory-attr-arm.h" 2 3 4
+# 1 "G:/zephyr_v4_1_0/zephyr/include/zephyr/dt-bindings/memory-attr/memory-attr.h" 1 3 4
+# 11 "G:/zephyr_v4_1_0/zephyr/include/zephyr/dt-bindings/memory-attr/memory-attr-arm.h" 2 3 4
+# 14 "G:/zephyr_v4_1_0/zephyr/dts/arm/nxp/nxp_mcxw7x_common.dtsi" 2 3 4
+
+/ {
+ aliases {
+  watchdog0 = &wdog0;
+ };
+
+ chosen {
+  zephyr,bt-hci = &hci;
+  zephyr,ieee802154 = &ieee802154;
+  zephyr,entropy = &trng;
+  zephyr,nbu = &nbu;
+ };
+
+ cpus {
+  #address-cells = <1>;
+  #size-cells = <0>;
+
+  cpu0: cpu@0 {
+   compatible = "arm,cortex-m33f";
+   reg = <0>;
+   #address-cells = <1>;
+   #size-cells = <1>;
+
+   mpu: mpu@e000ed90 {
+    compatible = "arm,armv8m-mpu";
+    reg = <0xe000ed90 0x40>;
+   };
+  };
+ };
+
+ soc {
+  fmu: memory-controller@50020000 {
+   #address-cells = <1>;
+   #size-cells = <1>;
+   compatible = "nxp,msf1";
+   reg = <0x50020000 0x30>;
+   interrupts = <27 0>;
+   status = "disabled";
+
+   flash: flash@0 {
+    compatible = "soc-nv-flash";
+    write-block-size = <16>;
+    erase-block-size = <8192>;
+   };
+  };
+
+  ctcm: sram@14000000 {
+   #address-cells = <1>;
+   #size-cells = <1>;
+
+   ctcm0: code_memory@0 {
+    compatible = "mmio-sram";
+   };
+  };
+
+  stcm: sram@30000000 {
+   #address-cells = <1>;
+   #size-cells = <1>;
+
+   stcm0: system_memory@0 {
+    compatible = "mmio-sram";
+   };
+  };
+
+  peripheral: peripheral@50000000 {
+   ranges = <0x0 0x50000000 0x10000000>;
+   #address-cells = <1>;
+   #size-cells = <1>;
+
+   pbridge2: pbridge2@0 {
+    ranges = <>;
+    #address-cells = <1>;
+    #size-cells = <1>;
+   };
+
+   fast_peripheral0: fast_peripherals0@8000000 {
+    #address-cells = <1>;
+    #size-cells = <1>;
+    ranges = <0x0 0x8000000 0x40000>;
+   };
+
+   fast_peripheral1: fast_peripherals1@8800000 {
+    #address-cells = <1>;
+    #size-cells = <1>;
+    ranges = <0x0 0x8800000 0x20a000>;
+   };
+  };
+ };
+
+ pinctrl: pinctrl {
+  compatible = "nxp,port-pinctrl";
+ };
+};
+
+&nvic {
+ arm,num-irq-priority-bits = <3>;
+};
+
+&pbridge2 {
+ #address-cells = <1>;
+ #size-cells = <1>;
+
+ scg: clock-controller@1e000 {
+  compatible = "nxp,scg-k4";
+  reg = <0x1e000 0x404>;
+  #clock-cells = <2>;
+ };
+
+ porta: pinctrl@42000 {
+  compatible = "nxp,port-pinmux";
+  clocks = <&scg 1U 0x108>;
+ };
+
+ portb: pinctrl@43000 {
+  compatible = "nxp,port-pinmux";
+  clocks = <&scg 1U 0x10c>;
+ };
+
+ portc: pinctrl@44000 {
+  compatible = "nxp,port-pinmux";
+  clocks = <&scg 1U 0x110>;
+ };
+
+ portd: pinctrl@45000 {
+  compatible = "nxp,port-pinmux";
+  clocks = <&scg 1U 0>;
+ };
+
+ lpuart0: serial@38000 {
+  compatible = "nxp,lpuart";
+  reg = <0x38000 0x34>;
+  interrupts = <44 0>;
+  clocks = <&scg 7U 0xe0>;
+  status = "disabled";
+ };
+
+ lpuart1: serial@39000 {
+  compatible = "nxp,lpuart";
+  reg = <0x39000 0x34>;
+  interrupts = <45 0>;
+  clocks = <&scg 7U 0xe4>;
+  status = "disabled";
+ };
+
+ lpi2c0: i2c@33000 {
+  compatible = "nxp,lpi2c";
+  reg = <0x33000 0x17c>;
+  clock-frequency = <100000>;
+  #address-cells = <1>;
+  #size-cells = <0>;
+  interrupts = <39 0>;
+  clocks = <&scg 7U 0xe0>;
+  status = "disabled";
+ };
+
+ lpi2c1: i2c@34000 {
+  compatible = "nxp,lpi2c";
+  reg = <0x34000 0x17c>;
+  clock-frequency = <100000>;
+  #address-cells = <1>;
+  #size-cells = <0>;
+  interrupts = <40 0>;
+  clocks = <&scg 7U 0xe4>;
+  status = "disabled";
+ };
+
+ lpspi0: spi@36000 {
+  compatible = "nxp,lpspi";
+  reg = <0x36000 0x800>;
+  interrupts = <42 0>;
+  clocks = <&scg 7U 0xd8>;
+  tx-fifo-size = <8>;
+  rx-fifo-size = <8>;
+  #address-cells = <1>;
+  #size-cells = <0>;
+  status = "disabled";
+ };
+
+ lpspi1: spi@37000 {
+  compatible = "nxp,lpspi";
+  reg = <0x37000 0x800>;
+  interrupts = <43 0>;
+  clocks = <&scg 7U 0xdc>;
+  tx-fifo-size = <8>;
+  rx-fifo-size = <8>;
+  #address-cells = <1>;
+  #size-cells = <0>;
+  status = "disabled";
+ };
+
+ gpiod: gpio@46000{
+  compatible = "nxp,kinetis-gpio";
+  reg = <0x46000 0x128>;
+  interrupts = <65 0>, <66 0>;
+  gpio-controller;
+  #gpio-cells = <2>;
+  nxp,kinetis-port = <&portd>;
+  status = "disabled";
+ };
+
+ vbat: vbat@2b000 {
+  reg = <0x2b000 0x33c>;
+  interrupts = <74 0>;
+ };
+
+ tpm0: pwm@31000 {
+  compatible = "nxp,kinetis-tpm";
+  reg = <0x31000 0x88>;
+  interrupts = <37 0>;
+  clocks = <&scg 7U 0xc4>;
+  prescaler = <16>;
+  status = "disabled";
+  #pwm-cells = <3>;
+ };
+
+ tpm1: pwm@32000 {
+  compatible = "nxp,kinetis-tpm";
+  reg = <0x32000 0x88>;
+  interrupts = <38 0>;
+  clocks = <&scg 7U 0xc8>;
+  prescaler = <16>;
+  status = "disabled";
+  #pwm-cells = <3>;
+ };
+
+ wdog0: watchdog@1a000 {
+  compatible = "nxp,wdog32";
+  reg = <0x1a000 10>;
+  interrupts = <23 0>;
+  clocks = <&scg 5U 0x68>;
+  clk-source = <1>;
+  clk-divider = <256>;
+  status = "okay";
+ };
+
+ wdog1: watchdog@1b000 {
+  compatible = "nxp,wdog32";
+  reg = <0x1b000 10>;
+  interrupts = <24 0>;
+  clocks = <&scg 5U 0x6c>;
+  clk-source = <1>;
+  clk-divider = <256>;
+  status = "disabled";
+ };
+
+ lptmr0: timer@2d000 {
+  compatible = "nxp,lptmr";
+  reg = <0x2d000 0x10>;
+  interrupts = <34 0>;
+  clock-frequency = <32000>;
+  clk-source = <2>;
+  prescaler = <1>;
+  resolution = <32>;
+  status = "disabled";
+ };
+
+ lptmr1: timer@2e000 {
+  compatible = "nxp,lptmr";
+  reg = <0x2e000 0x10>;
+  interrupts = <35 0>;
+  clock-frequency = <32000>;
+  clk-source = <2>;
+  prescaler = <1>;
+  resolution = <32>;
+  status = "disabled";
+ };
+
+ nbu: nbu {
+  compatible = "nxp,nbu";
+  interrupts = <48 2>;
+  interrupt-names = "nbu_rx_int";
+ };
+
+ hci: hci_ble {
+  compatible = "nxp,hci-ble";
+ };
+
+ ieee802154: ieee802154 {
+  compatible = "nxp,mcxw-ieee802154";
+ };
+
+ trng: trng {
+  compatible = "nxp,ele-trng";
+ };
+
+ flexcan0: can@3b000 {
+  compatible = "nxp,flexcan";
+  reg = <0x3b000 0x3080>;
+  interrupts = <47 0>;
+  interrupt-names = "common";
+  clocks = <&scg 7U 0xec>;
+  clk-source = <2>;
+  status = "disabled";
+ };
+
+ adc0: adc@47000 {
+  compatible = "nxp,lpc-lpadc";
+  reg = <0x47000 0x584>;
+  interrupts = <71 0>;
+  clocks = <&scg 7U 0x11c>;
+  voltage-ref= <1>;
+  calibration-average = <128>;
+
+  power-level = <0>;
+  offset-value-a = <0>;
+  offset-value-b = <0>;
+  #io-channel-cells = <1>;
+  nxp,references = <&vref 1800>;
+  status = "disabled";
+ };
+
+ vref: regulator@4a000 {
+  compatible = "nxp,vref";
+  reg = <0x4a000 0x14>;
+  regulator-name = "mcxw71-vref";
+  #nxp,reference-cells = <1>;
+  nxp,buffer-startup-delay-us = <400>;
+  nxp,bandgap-startup-time-us = <20>;
+  regulator-min-microvolt = <1000000>;
+  regulator-max-microvolt = <2100000>;
+  nxp,current-compensation-en;
+  status = "disabled";
+ };
+
+ rtc: rtc@4002c000 {
+  compatible = "nxp,rtc";
+  status = "disabled";
+  interrupts = <32 0>, <33 0>;
+  interrupt-names = "alarm", "seconds";
+  clock-frequency = <32768>;
+  prescaler = <32768>;
+ };
+};
+
+&fast_peripheral0 {
+ gpioa: gpio@10000{
+  compatible = "nxp,kinetis-gpio";
+  status = "disabled";
+  gpio-controller;
+  #gpio-cells = <2>;
+  nxp,kinetis-port = <&porta>;
+  reg = <0x10000 0x128>;
+  interrupts = <59 0>, <60 0>;
+ };
+
+ gpiob: gpio@20000{
+  compatible = "nxp,kinetis-gpio";
+  status = "disabled";
+  gpio-controller;
+  #gpio-cells = <2>;
+  nxp,kinetis-port = <&portb>;
+  reg = <0x20000 0x128>;
+  interrupts = <61 0>, <62 0>;
+ };
+
+ gpioc: gpio@30000{
+  compatible = "nxp,kinetis-gpio";
+  status = "disabled";
+  gpio-controller;
+  #gpio-cells = <2>;
+  nxp,kinetis-port = <&portc>;
+  reg = <0x30000 0x128>;
+  interrupts = <63 0>, <64 0>;
+ };
+};
+
+&fast_peripheral1 {
+ smu2: smu2@1c0000 {
+  #address-cells = <1>;
+  #size-cells = <1>;
+
+  rpmsgmem: memory@8800 {
+   compatible = "zephyr,memory-region","mmio-sram";
+   reg = <0x8800 ((6) * 1024)>;
+   zephyr,memory-region = "rpmsg_sh_mem";
+   zephyr,memory-attr = <( (((1UL << (0))) << (20)) )>;
+  };
+ };
+};
+# 8 "G:/zephyr_v4_1_0/zephyr/dts/arm/nxp/nxp_mcxw71.dtsi" 2 3 4
+
+&fmu {
+ ranges = <0x0 0x10000000 (((1) * 1024) * 1024)>;
+};
+
+&flash {
+ reg = <0x0 (((1) * 1024) * 1024)>;
+};
+
+&ctcm {
+ ranges = <0x0 0x14000000 ((16) * 1024)>;
+};
+
+&ctcm0 {
+ reg = <0x0 ((16) * 1024)>;
+};
+
+&stcm {
+ ranges = <0x0 0x30000000 ((112) * 1024)>;
+
+ stcm1: system_memory@1a000 {
+  compatible = "zephyr,memory-region","mmio-sram";
+  reg = <0x1a000 ((8) * 1024)>;
+  zephyr,memory-region = "RetainedMem";
+ };
+};
+
+&stcm0 {
+
+ reg = <0x0 ((104) * 1024)>;
+};
+
+&pbridge2 {
+ reg = <0x0 0x4b000>;
+};
+
+&porta {
+ reg = <0x42000 0xdc>;
+};
+
+&portb {
+ reg = <0x43000 0xdc>;
+};
+
+&portc {
+ reg = <0x44000 0xdc>;
+};
+
+&portd {
+ reg = <0x45000 0xdc>;
+};
+
+&smu2 {
+ ranges = <0x0 0x1c0000 ((40) * 1024)>;
+};
+
+&rtc {
+ reg = <0x4002c000 0x50>;
+};
+# 9 "G:/zephyr_v4_1_0/zephyr/boards/nxp/frdm_mcxw71/frdm_mcxw71.dts" 2
+# 1 "G:/zephyr_v4_1_0/zephyr/boards/nxp/frdm_mcxw71/frdm_mcxw71-pinctrl.dtsi" 1
+
+
+
+
+
+# 1 "G:/zephyr_v4_1_0/modules/hal/nxp/dts/nxp/mcx/MCXW716CMFTA-pinctrl.h" 1 3 4
+# 7 "G:/zephyr_v4_1_0/zephyr/boards/nxp/frdm_mcxw71/frdm_mcxw71-pinctrl.dtsi" 2
+
+&pinctrl {
+ pinmux_lpuart0: pinmux_lpuart0 {
+  group0 {
+   pinmux = <((((('A') - 'A') & 0xF) << 28) | (((16) & 0x3F) << 22) | (((6) & 0x7) << 8))>, <((((('A') - 'A') & 0xF) << 28) | (((17) & 0x3F) << 22) | (((6) & 0x7) << 8))>;
+   drive-strength = "low";
+   slew-rate = "fast";
+  };
+ };
+
+ pinmux_lpuart1: pinmux_lpuart1 {
+  group0 {
+   pinmux = <((((('C') - 'A') & 0xF) << 28) | (((2) & 0x3F) << 22) | (((3) & 0x7) << 8))>, <((((('C') - 'A') & 0xF) << 28) | (((3) & 0x3F) << 22) | (((3) & 0x7) << 8))>;
+   drive-strength = "low";
+   slew-rate = "fast";
+  };
+ };
+
+ pinmux_tpm0: pinmux_tpm0 {
+  group0 {
+   pinmux = <((((('A') - 'A') & 0xF) << 28) | (((21) & 0x3F) << 22) | (((5) & 0x7) << 8))>,
+    <((((('A') - 'A') & 0xF) << 28) | (((20) & 0x3F) << 22) | (((5) & 0x7) << 8))>,
+    <((((('A') - 'A') & 0xF) << 28) | (((19) & 0x3F) << 22) | (((5) & 0x7) << 8))>;
+   drive-strength = "low";
+   slew-rate = "fast";
+  };
+ };
+
+ pinmux_lpi2c0: pinmux_lpi2c0 {
+  group0 {
+   pinmux = <((((('A') - 'A') & 0xF) << 28) | (((19) & 0x3F) << 22) | (((4) & 0x7) << 8))>,
+    <((((('A') - 'A') & 0xF) << 28) | (((18) & 0x3F) << 22) | (((4) & 0x7) << 8))>;
+   drive-strength = "low";
+   slew-rate = "fast";
+   drive-open-drain;
+  };
+ };
+
+ pinmux_lpi2c1: pinmux_lpi2c1 {
+  group0 {
+   pinmux = <((((('B') - 'A') & 0xF) << 28) | (((5) & 0x3F) << 22) | (((4) & 0x7) << 8))>,
+    <((((('B') - 'A') & 0xF) << 28) | (((4) & 0x3F) << 22) | (((4) & 0x7) << 8))>;
+   drive-strength = "low";
+   slew-rate = "fast";
+   drive-open-drain;
+  };
+ };
+
+ pinmux_lpspi1: pinmux_lpspi1 {
+  group0 {
+   pinmux = <((((('B') - 'A') & 0xF) << 28) | (((1) & 0x3F) << 22) | (((2) & 0x7) << 8))>,
+     <((((('B') - 'A') & 0xF) << 28) | (((2) & 0x3F) << 22) | (((2) & 0x7) << 8))>,
+     <((((('B') - 'A') & 0xF) << 28) | (((3) & 0x3F) << 22) | (((2) & 0x7) << 8))>,
+     <((((('B') - 'A') & 0xF) << 28) | (((0) & 0x3F) << 22) | (((2) & 0x7) << 8))>;
+   slew-rate = "fast";
+   drive-strength = "low";
+  };
+ };
+
+ pinmux_flexcan: pinmux_flexcan {
+  group0 {
+   pinmux = <((((('C') - 'A') & 0xF) << 28) | (((5) & 0x3F) << 22) | (((3) & 0x7) << 8))>, <((((('C') - 'A') & 0xF) << 28) | (((4) & 0x3F) << 22) | (((3) & 0x7) << 8))>;
+   slew-rate = "slow";
+   drive-strength = "low";
+  };
+ };
+
+ pinmux_lpadc0: pinmux_lpadc0 {
+  group0 {
+   pinmux = <((((('D') - 'A') & 0xF) << 28) | (((2) & 0x3F) << 22) | (((0) & 0x7) << 8))>,
+    <((((('D') - 'A') & 0xF) << 28) | (((3) & 0x3F) << 22) | (((0) & 0x7) << 8))>,
+    <((((('D') - 'A') & 0xF) << 28) | (((1) & 0x3F) << 22) | (((0) & 0x7) << 8))>;
+   drive-strength = "low";
+   slew-rate = "fast";
+  };
+ };
+};
+# 10 "G:/zephyr_v4_1_0/zephyr/boards/nxp/frdm_mcxw71/frdm_mcxw71.dts" 2
+# 1 "G:/zephyr_v4_1_0/zephyr/include/zephyr/dt-bindings/input/input-event-codes.h" 1 3 4
+# 11 "G:/zephyr_v4_1_0/zephyr/boards/nxp/frdm_mcxw71/frdm_mcxw71.dts" 2
+
+/ {
+ model = "NXP FRDM-MCXW71 board";
+
+ aliases {
+  led0 = &blue_led;
+  sw0 = &user_button_0;
+  blue-pwm-led = &blue_pwm_led;
+  green-pwm-led = &green_pwm_led;
+  red-pwm-led = &red_pwm_led;
+ };
+
+ chosen {
+  zephyr,flash = &flash;
+  zephyr,flash-controller = &fmu;
+  zephyr,code-partition = &slot0_partition;
+  zephyr,sram = &stcm0;
+  zephyr,console = &lpuart1;
+  zephyr,shell-uart = &lpuart1;
+  zephyr,uart-pipe = &lpuart0;
+  zephyr,canbus = &flexcan0;
+  zephyr,uart-mcumgr = &lpuart0;
+ };
+
+ user_led {
+  compatible = "gpio-leds";
+  blue_led: led {
+   gpios = <&gpioc 1 (1 << 0)>;
+  };
+ };
+
+ pwmleds {
+  compatible = "pwm-leds";
+  blue_pwm_led: pwm_led_0 {
+   pwms = <&tpm0 1 (((20) * 1000UL) * 1000UL) (1 << 0)>;
+  };
+  green_pwm_led: pwm_led_1 {
+   pwms = <&tpm0 2 (((20) * 1000UL) * 1000UL) (1 << 0)>;
+  };
+  red_pwm_led: pwm_led_2 {
+   pwms = <&tpm0 0 (((20) * 1000UL) * 1000UL) (1 << 0)>;
+  };
+ };
+
+ gpio_keys {
+  compatible = "gpio-keys";
+  user_button_0: button_0 {
+   label = "User SW2";
+   gpios = <&gpioc 6 (1 << 0)>;
+   zephyr,code = <11>;
+   status = "okay";
+  };
+ };
+};
+
+&vref {
+ status = "okay";
+};
+
+&gpioc {
+ status = "okay";
+};
+
+&lpuart0 {
+ current-speed = <115200>;
+ status = "okay";
+ pinctrl-0 = <&pinmux_lpuart0>;
+ pinctrl-names = "default";
+};
+
+&lpuart1 {
+ current-speed = <115200>;
+ status = "okay";
+ pinctrl-0 = <&pinmux_lpuart1>;
+ pinctrl-names = "default";
+};
+
+&lpi2c1 {
+ status = "okay";
+ pinctrl-0 = <&pinmux_lpi2c1>;
+ pinctrl-names = "default";
+};
+
+&lpspi1 {
+ status = "okay";
+ pinctrl-0 = <&pinmux_lpspi1>;
+ pinctrl-names = "default";
+ pcs-sck-delay = <5>;
+ sck-pcs-delay = <5>;
+ transfer-delay = <125>;
+
+ mx25r6435fm2il0: flash@0 {
+  compatible = "jedec,spi-nor";
+  jedec-id = [c2 28 17];
+  reg = <0>;
+
+
+
+
+  wp-gpios = <&gpioc 0 (1 << 0)>;
+  size = <(((64) * 1024) * 1024)>;
+  has-dpd;
+  dpd-wakeup-sequence = <30000 20 35000>;
+  t-enter-dpd = <10000>;
+
+  mxicy,mx25r-power-mode = "low-power";
+
+  spi-max-frequency = <8000000>;
+ };
+};
+
+&flash {
+ partitions {
+  compatible = "fixed-partitions";
+  #address-cells = <1>;
+  #size-cells = <1>;
+
+
+
+  boot_partition: partition@0 {
+   reg = <0x0 ((64) * 1024)>;
+  };
+  slot0_partition: partition@10000 {
+   reg = <0x10000 (((416) * 1024) + ((16) * 1024))>;
+  };
+  slot1_partition: partition@7C000 {
+   reg = <0x7C000 ((416) * 1024)>;
+  };
+  storage_partition: partition@E4000 {
+   reg = <0xE4000 ((112) * 1024)>;
+  };
+ };
+};
+
+&fmu {
+ status = "okay";
+};
+
+&tpm0 {
+ status = "okay";
+ pinctrl-0 = <&pinmux_tpm0>;
+ pinctrl-names = "default";
+};
+
+&lptmr0 {
+ status = "okay";
+};
+
+&flexcan0 {
+ status = "okay";
+ pinctrl-0 = <&pinmux_flexcan>;
+ pinctrl-names = "default";
+
+ can-transceiver {
+  max-bitrate = <5000000>;
+ };
+};
+
+&adc0 {
+ pinctrl-0 = <&pinmux_lpadc0>;
+ pinctrl-names = "default";
+ status = "okay";
+};
+
+&nbu {
+ status = "okay";
+ wakeup-source;
+};
+
+&rtc {
+ status = "okay";
+};
+# 0 "<command-line>" 2
+# 1 "G:/zephyr_v4_1_0/zephyr/misc/empty_file.c"

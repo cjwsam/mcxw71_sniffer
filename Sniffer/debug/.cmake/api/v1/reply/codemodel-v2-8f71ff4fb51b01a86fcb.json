@@ -1,0 +1,340 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"jsonFile" : "directory-.-debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "_sysbuild",
+					"childIndexes" : 
+					[
+						2
+					],
+					"jsonFile" : "directory-_sysbuild-debug-71a2f17ff847e6612331.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "template",
+					"targetIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						9,
+						10,
+						15,
+						16,
+						17,
+						18
+					]
+				},
+				{
+					"build" : "_sysbuild/sysbuild/images",
+					"childIndexes" : 
+					[
+						3,
+						4,
+						5,
+						6
+					],
+					"jsonFile" : "directory-_sysbuild.sysbuild.images-debug-6a6300095969ff8989f3.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 2,
+					"source" : "images",
+					"targetIndexes" : 
+					[
+						0,
+						6,
+						7,
+						14
+					]
+				},
+				{
+					"build" : "_sysbuild/sysbuild/images/bootloader",
+					"jsonFile" : "directory-_sysbuild.sysbuild.images.bootloader-debug-53a5abb57a616546f529.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 2,
+					"source" : "images/bootloader",
+					"targetIndexes" : 
+					[
+						8,
+						11,
+						12,
+						13
+					]
+				},
+				{
+					"build" : "modules/mcuboot",
+					"jsonFile" : "directory-modules.mcuboot-debug-76d1fe1a74f12c4ffd4f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 2,
+					"source" : "G:/zephyr_v4_1_0/bootloader/mcuboot/boot/zephyr/sysbuild"
+				},
+				{
+					"build" : "_sysbuild/sysbuild/images/boards",
+					"jsonFile" : "directory-_sysbuild.sysbuild.images.boards-debug-818e141e08357ef88b49.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 2,
+					"source" : "images/boards"
+				},
+				{
+					"build" : "_sysbuild/sysbuild/images/soc",
+					"jsonFile" : "directory-_sysbuild.sysbuild.images.soc-debug-0e586cd998357614030a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 2,
+					"source" : "images/soc"
+				}
+			],
+			"name" : "debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "sysbuild_toplevel"
+				},
+				{
+					"childIndexes" : 
+					[
+						2
+					],
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "sysbuild",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						9,
+						10,
+						15,
+						16,
+						17,
+						18
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2,
+						3,
+						4,
+						5,
+						6
+					],
+					"name" : "sysbuild_toplevel",
+					"parentIndex" : 1,
+					"targetIndexes" : 
+					[
+						0,
+						6,
+						7,
+						8,
+						11,
+						12,
+						13,
+						14
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 2,
+					"id" : "Sniffer::@0558fe0cb8c5eeadb36a",
+					"jsonFile" : "target-Sniffer-debug-af0d5c5e035d1f7cce72.json",
+					"name" : "Sniffer",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "Sniffer_cache::@95dfbc4a1ed516501d75",
+					"jsonFile" : "target-Sniffer_cache-debug-3768f6e6f2b65a36301a.json",
+					"name" : "Sniffer_cache",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "Sniffer_extra_byproducts::@95dfbc4a1ed516501d75",
+					"jsonFile" : "target-Sniffer_extra_byproducts-debug-97d957f4254d23ed3c16.json",
+					"name" : "Sniffer_extra_byproducts",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "boards::@95dfbc4a1ed516501d75",
+					"jsonFile" : "target-boards-debug-cd9890c076819955849d.json",
+					"name" : "boards",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "build_info_yaml_saved::@95dfbc4a1ed516501d75",
+					"jsonFile" : "target-build_info_yaml_saved-debug-f58a978831f2b098553d.json",
+					"name" : "build_info_yaml_saved",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "config-twister::@95dfbc4a1ed516501d75",
+					"jsonFile" : "target-config-twister-debug-9ee2a9f9975fae92bc92.json",
+					"name" : "config-twister",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "guiconfig::@0558fe0cb8c5eeadb36a",
+					"jsonFile" : "target-guiconfig-debug-bbcdbaf7dabe9c369374.json",
+					"name" : "guiconfig",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "hardenconfig::@0558fe0cb8c5eeadb36a",
+					"jsonFile" : "target-hardenconfig-debug-1f6f1e99fb644770eb6a.json",
+					"name" : "hardenconfig",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "mcuboot::@3166adb73481c6f97f96",
+					"jsonFile" : "target-mcuboot-debug-5907048541203dcd13a8.json",
+					"name" : "mcuboot",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "mcuboot_cache::@95dfbc4a1ed516501d75",
+					"jsonFile" : "target-mcuboot_cache-debug-fddcb9ad431f7cebd172.json",
+					"name" : "mcuboot_cache",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "mcuboot_extra_byproducts::@95dfbc4a1ed516501d75",
+					"jsonFile" : "target-mcuboot_extra_byproducts-debug-eff3b5828f231059ef6d.json",
+					"name" : "mcuboot_extra_byproducts",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "mcuboot_guiconfig::@3166adb73481c6f97f96",
+					"jsonFile" : "target-mcuboot_guiconfig-debug-6fd60f3c8079948846d0.json",
+					"name" : "mcuboot_guiconfig",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "mcuboot_hardenconfig::@3166adb73481c6f97f96",
+					"jsonFile" : "target-mcuboot_hardenconfig-debug-2286985596bb160ea094.json",
+					"name" : "mcuboot_hardenconfig",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "mcuboot_menuconfig::@3166adb73481c6f97f96",
+					"jsonFile" : "target-mcuboot_menuconfig-debug-c1954503a77af1b38c39.json",
+					"name" : "mcuboot_menuconfig",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "menuconfig::@0558fe0cb8c5eeadb36a",
+					"jsonFile" : "target-menuconfig-debug-474ac0b0324e88be4a89.json",
+					"name" : "menuconfig",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "shields::@95dfbc4a1ed516501d75",
+					"jsonFile" : "target-shields-debug-f84c8db7fe2aef4c5322.json",
+					"name" : "shields",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "snippets::@95dfbc4a1ed516501d75",
+					"jsonFile" : "target-snippets-debug-0935d3496934df12dd0d.json",
+					"name" : "snippets",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "sysbuild_guiconfig::@95dfbc4a1ed516501d75",
+					"jsonFile" : "target-sysbuild_guiconfig-debug-d802161696d76fa6ec01.json",
+					"name" : "sysbuild_guiconfig",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "sysbuild_menuconfig::@95dfbc4a1ed516501d75",
+					"jsonFile" : "target-sysbuild_menuconfig-debug-1357476d53ff6643c39a.json",
+					"name" : "sysbuild_menuconfig",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/cjwsa/Documents/Zephyr_Projects/mcxw71_sniffer/Sniffer/debug",
+		"source" : "G:/zephyr_v4_1_0/zephyr/share/sysbuild"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 8
+	}
+}

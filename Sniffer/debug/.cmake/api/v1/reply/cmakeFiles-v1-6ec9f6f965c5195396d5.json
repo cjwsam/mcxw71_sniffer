@@ -1,0 +1,1843 @@
+{
+	"inputs" : 
+	[
+		{
+			"path" : "CMakeLists.txt"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineSystem.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeSystem.cmake.in"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "C:/Users/cjwsa/Documents/Zephyr_Projects/mcxw71_sniffer/Sniffer/debug/CMakeFiles/4.0.3/CMakeSystem.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeNinjaFindMake.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeSystemSpecificInitialize.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.0/Modules/Platform/Windows-Initialize.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeSystemSpecificInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeGenericSystem.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeInitializeConfigs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.0/Modules/Platform/Windows.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.0/Modules/Platform/WindowsPaths.cmake"
+		},
+		{
+			"path" : "template/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:/zephyr_v4_1_0/zephyr/share/sysbuild-package/cmake/SysbuildConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:/zephyr_v4_1_0/zephyr/share/zephyr-package/cmake/ZephyrConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:/zephyr_v4_1_0/zephyr/share/zephyr-package/cmake/zephyr_package_search.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:/zephyr_v4_1_0/zephyr/cmake/modules/version.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:/zephyr_v4_1_0/zephyr/share/sysbuild-package/cmake/SysbuildConfig.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:/zephyr_v4_1_0/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake"
+		},
+		{
+			"path" : "cmake/modules/sysbuild_default.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:/zephyr_v4_1_0/zephyr/cmake/modules/extensions.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:/zephyr_v4_1_0/zephyr/cmake/modules/user_cache.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:/zephyr_v4_1_0/zephyr/cmake/modules/python.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:/zephyr_v4_1_0/zephyr/cmake/modules/FindDeprecated.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.0/Modules/FindPython3.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.0/Modules/FindPython/Support.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.0/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.0/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.0/Modules/CheckCCompilerFlag.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.0/Modules/Internal/CheckCompilerFlag.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.0/Modules/Internal/CheckFlagCommonConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.0/Modules/Internal/CheckSourceCompiles.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.0/Modules/CheckCSourceCompiles.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.0/Modules/Internal/CheckSourceCompiles.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.0/Modules/CheckCXXCompilerFlag.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.0/Modules/Internal/CheckCompilerFlag.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.0/Modules/CheckCXXSourceCompiles.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.0/Modules/Internal/CheckSourceCompiles.cmake"
+		},
+		{
+			"path" : "cmake/modules/sysbuild_extensions.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:/zephyr_v4_1_0/zephyr/cmake/modules/python.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:/zephyr_v4_1_0/zephyr/cmake/modules/west.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:/zephyr_v4_1_0/zephyr/cmake/modules/python.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:/zephyr_v4_1_0/zephyr/cmake/modules/yaml.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:/zephyr_v4_1_0/zephyr/cmake/modules/extensions.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:/zephyr_v4_1_0/zephyr/cmake/modules/python.cmake"
+		},
+		{
+			"path" : "cmake/modules/sysbuild_root.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:/zephyr_v4_1_0/zephyr/cmake/modules/extensions.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:/zephyr_v4_1_0/zephyr/cmake/modules/zephyr_module.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:/zephyr_v4_1_0/zephyr/cmake/modules/extensions.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:/zephyr_v4_1_0/zephyr/cmake/modules/python.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:/zephyr_v4_1_0/zephyr/modules/modules.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:/zephyr_v4_1_0/zephyr/cmake/modules/boards.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:/zephyr_v4_1_0/zephyr/cmake/modules/python.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:/zephyr_v4_1_0/zephyr/cmake/modules/extensions.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:/zephyr_v4_1_0/zephyr/boards/deprecated.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:/zephyr_v4_1_0/zephyr/cmake/modules/shields.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:/zephyr_v4_1_0/zephyr/cmake/modules/extensions.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:/zephyr_v4_1_0/zephyr/cmake/modules/hwm_v2.cmake"
+		},
+		{
+			"path" : "cmake/modules/sysbuild_snippets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:/zephyr_v4_1_0/zephyr/cmake/modules/snippets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:/zephyr_v4_1_0/zephyr/cmake/modules/extensions.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "C:/Users/cjwsa/Documents/Zephyr_Projects/mcxw71_sniffer/Sniffer/debug/zephyr/snippets_generated.cmake"
+		},
+		{
+			"path" : "cmake/modules/sysbuild_kconfig.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:/zephyr_v4_1_0/zephyr/cmake/modules/kconfig.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:/zephyr_v4_1_0/zephyr/cmake/modules/extensions.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:/zephyr_v4_1_0/zephyr/cmake/modules/python.cmake"
+		},
+		{
+			"path" : "cmake/modules/native_simulator_sb_extensions.cmake"
+		},
+		{
+			"path" : "cmake/modules/sysbuild_images.cmake"
+		},
+		{
+			"path" : "image_configurations/ALL_image_default.cmake"
+		},
+		{
+			"path" : "image_configurations/BOOTLOADER_image_default.cmake"
+		},
+		{
+			"path" : "image_configurations/ALL_image_default.cmake"
+		},
+		{
+			"path" : "image_configurations/MAIN_image_default.cmake"
+		},
+		{
+			"path" : "cmake/domains.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:/zephyr_v4_1_0/zephyr/VERSION"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:/zephyr_v4_1_0/zephyr/boards/nxp/frdm_mcxw71/board.yml"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:/zephyr_v4_1_0/zephyr/scripts/snippets.py"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:/zephyr_v4_1_0/zephyr/snippets/bt-ll-sw-split/snippet.yml"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:/zephyr_v4_1_0/zephyr/snippets/cdc-acm-console/snippet.yml"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:/zephyr_v4_1_0/zephyr/snippets/nordic-flpr-xip/snippet.yml"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:/zephyr_v4_1_0/zephyr/snippets/nordic-flpr/snippet.yml"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:/zephyr_v4_1_0/zephyr/snippets/nordic-log-stm-dict/snippet.yml"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:/zephyr_v4_1_0/zephyr/snippets/nordic-log-stm/snippet.yml"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:/zephyr_v4_1_0/zephyr/snippets/nordic-ppr-xip/snippet.yml"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:/zephyr_v4_1_0/zephyr/snippets/nordic-ppr/snippet.yml"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:/zephyr_v4_1_0/zephyr/snippets/nus-console/snippet.yml"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:/zephyr_v4_1_0/zephyr/snippets/ram-console/snippet.yml"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:/zephyr_v4_1_0/zephyr/snippets/rtt-console/snippet.yml"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:/zephyr_v4_1_0/zephyr/snippets/rtt-tracing/snippet.yml"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:/zephyr_v4_1_0/zephyr/snippets/serial-console/snippet.yml"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:/zephyr_v4_1_0/zephyr/snippets/usbip-native-sim/snippet.yml"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:/zephyr_v4_1_0/zephyr/snippets/wifi-ipv4/snippet.yml"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:/zephyr_v4_1_0/zephyr/snippets/xen_dom0/snippet.yml"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "C:/Users/cjwsa/Documents/Zephyr_Projects/mcxw71_sniffer/Sniffer/debug/_sysbuild/autoconf.h"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "C:/Users/cjwsa/Documents/Zephyr_Projects/mcxw71_sniffer/Sniffer/debug/_sysbuild/empty.conf"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Users/cjwsa/Documents/Zephyr_Projects/mcxw71_sniffer/Sniffer/sysbuild.conf"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "C:/Users/cjwsa/Documents/Zephyr_Projects/mcxw71_sniffer/Sniffer/debug/zephyr/.config"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "C:\\Users\\cjwsa\\Documents\\Zephyr_Projects\\mcxw71_sniffer\\Sniffer\\debug\\Kconfig\\Kconfig.sysbuild.modules"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "C:\\Users\\cjwsa\\Documents\\Zephyr_Projects\\mcxw71_sniffer\\Sniffer\\debug\\Kconfig\\boards\\Kconfig.frdm_mcxw71"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "C:\\Users\\cjwsa\\Documents\\Zephyr_Projects\\mcxw71_sniffer\\Sniffer\\debug\\Kconfig\\boards\\Kconfig.sysbuild"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "C:\\Users\\cjwsa\\Documents\\Zephyr_Projects\\mcxw71_sniffer\\Sniffer\\debug\\Kconfig\\soc\\Kconfig.soc"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "C:\\Users\\cjwsa\\Documents\\Zephyr_Projects\\mcxw71_sniffer\\Sniffer\\debug\\Kconfig\\soc\\Kconfig.sysbuild"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\boards\\Kconfig.v2"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\boards\\nxp\\frdm_mcxw71\\Kconfig.frdm_mcxw71"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\modules\\Kconfig.sysbuild"
+		},
+		{
+			"path" : "Kconfig"
+		},
+		{
+			"path" : "Kconfig.v2"
+		},
+		{
+			"path" : "build/Kconfig"
+		},
+		{
+			"path" : "images/Kconfig"
+		},
+		{
+			"path" : "images/bootloader/Kconfig"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\Kconfig.v2"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\adi\\max32\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\altr\\qemu_nios2\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\altr\\zephyr_nios2f\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\ambiq\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\ambiq\\apollo3x\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\ambiq\\apollo4x\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\amd\\acp_6_0\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\andestech\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\andestech\\ae350\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\antmicro\\myra\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\arm\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\arm\\beetle\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\arm\\designstart\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\arm\\fvp_aemv8a\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\arm\\fvp_aemv8r\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\arm\\mps2\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\arm\\mps3\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\arm\\musca\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\arm\\qemu_cortex_a53\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\arm\\qemu_virt_arm64\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\aspeed\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\aspeed\\ast10x0\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\atmel\\sam0\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\atmel\\sam0\\samc20\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\atmel\\sam0\\samc21\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\atmel\\sam0\\samd20\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\atmel\\sam0\\samd21\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\atmel\\sam0\\samd51\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\atmel\\sam0\\same51\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\atmel\\sam0\\same53\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\atmel\\sam0\\same54\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\atmel\\sam0\\saml21\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\atmel\\sam0\\samr21\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\atmel\\sam0\\samr34\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\atmel\\sam0\\samr35\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\atmel\\sam\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\atmel\\sam\\sam3x\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\atmel\\sam\\sam4e\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\atmel\\sam\\sam4l\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\atmel\\sam\\sam4s\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\atmel\\sam\\samx7x\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\atmel\\sam\\samx7x\\Kconfig.soc.same70"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\atmel\\sam\\samx7x\\Kconfig.soc.samv71"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\brcm\\bcm2711\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\brcm\\bcm2712\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\brcm\\bcmvk\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\brcm\\bcmvk\\valkyrie\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\brcm\\bcmvk\\viper\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\cdns\\dc233c\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\cdns\\sample_controller32\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\cdns\\xtensa_sample_controller\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\efinix\\sapphire\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\ene\\kb1200\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\espressif\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\espressif\\Kconfig.sysbuild"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\espressif\\esp32\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\espressif\\esp32c2\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\espressif\\esp32c3\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\espressif\\esp32c6\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\espressif\\esp32s2\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\espressif\\esp32s3\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\gaisler\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\gaisler\\gr716a\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\gaisler\\leon3\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\gd\\gd32\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\gd\\gd32\\gd32a50x\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\gd\\gd32\\gd32e10x\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\gd\\gd32\\gd32e50x\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\gd\\gd32\\gd32f3x0\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\gd\\gd32\\gd32f403\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\gd\\gd32\\gd32f4xx\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\gd\\gd32\\gd32l23x\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\gd\\gd32\\gd32vf103\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\infineon\\cat1a\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\infineon\\cat1a\\psoc6_01\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\infineon\\cat1a\\psoc6_02\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\infineon\\cat1a\\psoc6_03\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\infineon\\cat1a\\psoc6_04\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\infineon\\cat1a\\psoc6_legacy\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\infineon\\cat1b\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\infineon\\cat1b\\cyw20829\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\infineon\\cat3\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\infineon\\cat3\\xmc4xxx\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\intel\\alder_lake\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\intel\\apollo_lake\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\intel\\atom\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\intel\\elkhart_lake\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\intel\\intel_adsp\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\intel\\intel_adsp\\ace\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\intel\\intel_adsp\\cavs\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\intel\\intel_ish\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\intel\\intel_ish\\intel_ish5\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\intel\\intel_niosv\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\intel\\intel_niosv\\niosv\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\intel\\intel_socfpga\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\intel\\intel_socfpga\\agilex5\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\intel\\intel_socfpga\\agilex\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\intel\\intel_socfpga_std\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\intel\\intel_socfpga_std\\cyclonev\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\intel\\lakemont\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\intel\\raptor_lake\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\ite\\ec\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\ite\\ec\\it8xxx2\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\litex\\litex_vexriscv\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\lowrisc\\opentitan\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\mediatek\\mt8xxx\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\microchip\\mec\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\microchip\\mec\\mec15xx\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\microchip\\mec\\mec172x\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\microchip\\mec\\mec174x\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\microchip\\mec\\mec175x\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\microchip\\mec\\mech172x\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\microchip\\miv\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\microchip\\miv\\miv\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\microchip\\miv\\polarfire\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\native\\inf_clock\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\neorv32\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\nordic\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\nordic\\Kconfig.sysbuild"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\nordic\\common\\vpr\\Kconfig.sysbuild"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\nordic\\nrf51\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\nordic\\nrf52\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\nordic\\nrf53\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\nordic\\nrf54h\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\nordic\\nrf54l\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\nordic\\nrf91\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\nordic\\nrf92\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\nuvoton\\npcm\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\nuvoton\\npcm\\npcm4\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\nuvoton\\npcx\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\nuvoton\\npcx\\npcx4\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\nuvoton\\npcx\\npcx7\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\nuvoton\\npcx\\npcx9\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\nuvoton\\numaker\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\nuvoton\\numaker\\m2l31x\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\nuvoton\\numaker\\m46x\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\nuvoton\\numicro\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\nuvoton\\numicro\\m48x\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\nxp\\imx\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\nxp\\imx\\imx6sx\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\nxp\\imx\\imx7d\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\nxp\\imx\\imx8\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\nxp\\imx\\imx8m\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\nxp\\imx\\imx8ulp\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\nxp\\imx\\imx8x\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\nxp\\imx\\imx9\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\nxp\\imx\\imx9\\imx91\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\nxp\\imx\\imx9\\imx93\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\nxp\\imx\\imx9\\imx95\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\nxp\\imxrt\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\nxp\\imxrt\\Kconfig.sysbuild"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\nxp\\imxrt\\imxrt10xx\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\nxp\\imxrt\\imxrt118x\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\nxp\\imxrt\\imxrt11xx\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\nxp\\imxrt\\imxrt5xx\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\nxp\\imxrt\\imxrt6xx\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\nxp\\imxrt\\imxrt7xx\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\nxp\\kinetis\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\nxp\\kinetis\\k2x\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\nxp\\kinetis\\k6x\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\nxp\\kinetis\\k8x\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\nxp\\kinetis\\ke1xf\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\nxp\\kinetis\\ke1xz\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\nxp\\kinetis\\kl2x\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\nxp\\kinetis\\kv5x\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\nxp\\kinetis\\kwx\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\nxp\\layerscape\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\nxp\\layerscape\\ls1046a\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\nxp\\lpc\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\nxp\\lpc\\lpc11u6x\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\nxp\\lpc\\lpc51u68\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\nxp\\lpc\\lpc54xxx\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\nxp\\lpc\\lpc55xxx\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\nxp\\mcx\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\nxp\\mcx\\mcxa\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\nxp\\mcx\\mcxc\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\nxp\\mcx\\mcxn\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\nxp\\mcx\\mcxw\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\nxp\\rw\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\nxp\\s32\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\nxp\\s32\\s32k1\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\nxp\\s32\\s32k3\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\nxp\\s32\\s32ze\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\openisa\\rv32m1\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\qemu\\malta\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\qemu\\virt_riscv\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\qemu\\virt_riscv\\qemu_virt_riscv32\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\qemu\\virt_riscv\\qemu_virt_riscv32e\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\qemu\\virt_riscv\\qemu_virt_riscv64\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\quicklogic\\eos_s3\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\raspberrypi\\rpi_pico\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\raspberrypi\\rpi_pico\\rp2040\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\raspberrypi\\rpi_pico\\rp2350\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\realtek\\ec\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\realtek\\ec\\rts5912\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\renesas\\ra\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\renesas\\ra\\ra2a1\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\renesas\\ra\\ra2l1\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\renesas\\ra\\ra4e1\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\renesas\\ra\\ra4e2\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\renesas\\ra\\ra4l1\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\renesas\\ra\\ra4m1\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\renesas\\ra\\ra4m2\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\renesas\\ra\\ra4m3\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\renesas\\ra\\ra4w1\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\renesas\\ra\\ra6e1\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\renesas\\ra\\ra6e2\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\renesas\\ra\\ra6m1\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\renesas\\ra\\ra6m2\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\renesas\\ra\\ra6m3\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\renesas\\ra\\ra6m4\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\renesas\\ra\\ra6m5\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\renesas\\ra\\ra8d1\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\renesas\\ra\\ra8m1\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\renesas\\ra\\ra8t1\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\renesas\\rcar\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\renesas\\rcar\\rcar_gen3\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\renesas\\rcar\\rcar_gen4\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\renesas\\rz\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\renesas\\rz\\rzg3s\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\renesas\\rzt2m\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\renesas\\smartbond\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\renesas\\smartbond\\da1469x\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\renode\\cortex_r8_virtual\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\renode\\riscv_virtual\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\rockchip\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\rockchip\\rk3399\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\rockchip\\rk35\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\rockchip\\rk35\\rk3568\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\rockchip\\rk35\\rk3588s\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\sensry\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\sensry\\ganymed\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\sensry\\ganymed\\sy1xx\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\sifive\\sifive_freedom\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\sifive\\sifive_freedom\\fe300\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\sifive\\sifive_freedom\\fu500\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\sifive\\sifive_freedom\\fu700\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\silabs\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\silabs\\silabs_s0\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\silabs\\silabs_s0\\efm32hg\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\silabs\\silabs_s0\\efm32wg\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\silabs\\silabs_s1\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\silabs\\silabs_s1\\efm32gg11b\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\silabs\\silabs_s1\\efm32gg12b\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\silabs\\silabs_s1\\efm32jg12b\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\silabs\\silabs_s1\\efm32pg12b\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\silabs\\silabs_s1\\efm32pg1b\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\silabs\\silabs_s1\\efr32bg13p\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\silabs\\silabs_s1\\efr32fg13p\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\silabs\\silabs_s1\\efr32fg1p\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\silabs\\silabs_s1\\efr32mg12p\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\silabs\\silabs_s2\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\silabs\\silabs_s2\\efr32bg22\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\silabs\\silabs_s2\\efr32bg27\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\silabs\\silabs_s2\\efr32mg21\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\silabs\\silabs_s2\\efr32mg24\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\silabs\\silabs_s2\\efr32zg23\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\silabs\\silabs_s2\\xg29\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\silabs\\silabs_sim3\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\silabs\\silabs_sim3\\sim3u\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\silabs\\silabs_siwx91x\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\silabs\\silabs_siwx91x\\siwg917\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\snps\\arc_iot\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\snps\\emsdp\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\snps\\emsk\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\snps\\hsdk4xd\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\snps\\hsdk\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\snps\\nsim\\arc_classic\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\snps\\nsim\\arc_classic\\em\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\snps\\nsim\\arc_classic\\hs\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\snps\\nsim\\arc_classic\\sem\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\snps\\nsim\\arc_classic\\vpx5\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\snps\\nsim\\arc_v\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\snps\\nsim\\arc_v\\rmx\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\snps\\qemu_arc\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\st\\stm32\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\st\\stm32\\stm32c0x\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\st\\stm32\\stm32f0x\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\st\\stm32\\stm32f1x\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\st\\stm32\\stm32f2x\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\st\\stm32\\stm32f3x\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\st\\stm32\\stm32f4x\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\st\\stm32\\stm32f7x\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\st\\stm32\\stm32g0x\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\st\\stm32\\stm32g4x\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\st\\stm32\\stm32h5x\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\st\\stm32\\stm32h7rsx\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\st\\stm32\\stm32h7x\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\st\\stm32\\stm32l0x\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\st\\stm32\\stm32l1x\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\st\\stm32\\stm32l4x\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\st\\stm32\\stm32l5x\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\st\\stm32\\stm32mp1x\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\st\\stm32\\stm32n6x\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\st\\stm32\\stm32u0x\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\st\\stm32\\stm32u5x\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\st\\stm32\\stm32wb0x\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\st\\stm32\\stm32wbax\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\st\\stm32\\stm32wbx\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\st\\stm32\\stm32wlx\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\starfive\\jh71xx\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\telink\\tlsr\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\telink\\tlsr\\tlsr951x\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\ti\\k3\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\ti\\k3\\am6x\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\ti\\lm3s6965\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\ti\\simplelink\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\ti\\simplelink\\cc13x2_cc26x2\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\ti\\simplelink\\cc13x2x7_cc26x2x7\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\ti\\simplelink\\cc23x0\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\ti\\simplelink\\cc32xx\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\ti\\simplelink\\msp432p4xx\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\wch\\ch32v\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\wch\\ch32v\\qingke_v2a\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\wch\\ch32v\\qingke_v2a\\Kconfig.soc.ch32v003"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\xen\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\xlnx\\zynq7000\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\xlnx\\zynq7000\\xc7zxxx\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\xlnx\\zynq7000\\xc7zxxxs\\Kconfig.soc"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:\\zephyr_v4_1_0\\zephyr\\soc\\xlnx\\zynqmp\\Kconfig.soc"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "C:/Users/cjwsa/Documents/Zephyr_Projects/mcxw71_sniffer/Sniffer/debug/mcuboot/CMakeCache.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "C:/Users/cjwsa/Documents/Zephyr_Projects/mcxw71_sniffer/Sniffer/debug/mcuboot/zephyr/.config"
+		},
+		{
+			"path" : "images/CMakeLists.txt"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.0/Modules/ExternalProject.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.0/Modules/ExternalProject/shared_internal_commands.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.0/Modules/ExternalProject/mkdirs.cmake.in"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "C:/Users/cjwsa/Documents/Zephyr_Projects/mcxw71_sniffer/Sniffer/debug/_sysbuild/sysbuild/images/Sniffer-prefix/tmp/Sniffer-mkdirs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.0/Modules/ExternalProject/RepositoryInfo.txt.in"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.0/Modules/ExternalProject/UpdateInfo.txt.in"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.0/Modules/ExternalProject/PatchInfo.txt.in"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.0/Modules/ExternalProject/cfgcmd.txt.in"
+		},
+		{
+			"path" : "images/bootloader/CMakeLists.txt"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.0/Modules/ExternalProject.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.0/Modules/ExternalProject/mkdirs.cmake.in"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "C:/Users/cjwsa/Documents/Zephyr_Projects/mcxw71_sniffer/Sniffer/debug/_sysbuild/sysbuild/images/bootloader/mcuboot-prefix/tmp/mcuboot-mkdirs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.0/Modules/ExternalProject/RepositoryInfo.txt.in"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.0/Modules/ExternalProject/UpdateInfo.txt.in"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.0/Modules/ExternalProject/PatchInfo.txt.in"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.0/Modules/ExternalProject/cfgcmd.txt.in"
+		},
+		{
+			"isExternal" : true,
+			"path" : "G:/zephyr_v4_1_0/bootloader/mcuboot/boot/zephyr/sysbuild/CMakeLists.txt"
+		},
+		{
+			"path" : "images/boards/CMakeLists.txt"
+		},
+		{
+			"path" : "images/soc/CMakeLists.txt"
+		}
+	],
+	"kind" : "cmakeFiles",
+	"paths" : 
+	{
+		"build" : "C:/Users/cjwsa/Documents/Zephyr_Projects/mcxw71_sniffer/Sniffer/debug",
+		"source" : "G:/zephyr_v4_1_0/zephyr/share/sysbuild"
+	},
+	"version" : 
+	{
+		"major" : 1,
+		"minor" : 1
+	}
+}

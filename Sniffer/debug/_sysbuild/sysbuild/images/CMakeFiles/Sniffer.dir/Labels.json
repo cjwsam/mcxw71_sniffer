@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/cjwsa/Documents/Zephyr_Projects/mcxw71_sniffer/Sniffer/debug/_sysbuild/sysbuild/images/CMakeFiles/Sniffer"
+		},
+		{
+			"file" : "C:/Users/cjwsa/Documents/Zephyr_Projects/mcxw71_sniffer/Sniffer/debug/_sysbuild/sysbuild/images/CMakeFiles/Sniffer.rule"
+		},
+		{
+			"file" : "C:/Users/cjwsa/Documents/Zephyr_Projects/mcxw71_sniffer/Sniffer/debug/_sysbuild/sysbuild/images/CMakeFiles/Sniffer-complete.rule"
+		},
+		{
+			"file" : "C:/Users/cjwsa/Documents/Zephyr_Projects/mcxw71_sniffer/Sniffer/debug/_sysbuild/sysbuild/images/Sniffer-prefix/src/Sniffer-stamp/Sniffer-build.rule"
+		},
+		{
+			"file" : "C:/Users/cjwsa/Documents/Zephyr_Projects/mcxw71_sniffer/Sniffer/debug/_sysbuild/sysbuild/images/Sniffer-prefix/src/Sniffer-stamp/Sniffer-configure.rule"
+		},
+		{
+			"file" : "C:/Users/cjwsa/Documents/Zephyr_Projects/mcxw71_sniffer/Sniffer/debug/_sysbuild/sysbuild/images/Sniffer-prefix/src/Sniffer-stamp/Sniffer-download.rule"
+		},
+		{
+			"file" : "C:/Users/cjwsa/Documents/Zephyr_Projects/mcxw71_sniffer/Sniffer/debug/_sysbuild/sysbuild/images/Sniffer-prefix/src/Sniffer-stamp/Sniffer-install.rule"
+		},
+		{
+			"file" : "C:/Users/cjwsa/Documents/Zephyr_Projects/mcxw71_sniffer/Sniffer/debug/_sysbuild/sysbuild/images/Sniffer-prefix/src/Sniffer-stamp/Sniffer-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/cjwsa/Documents/Zephyr_Projects/mcxw71_sniffer/Sniffer/debug/_sysbuild/sysbuild/images/Sniffer-prefix/src/Sniffer-stamp/Sniffer-patch.rule"
+		},
+		{
+			"file" : "C:/Users/cjwsa/Documents/Zephyr_Projects/mcxw71_sniffer/Sniffer/debug/_sysbuild/sysbuild/images/Sniffer-prefix/src/Sniffer-stamp/Sniffer-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"Sniffer"
+		],
+		"name" : "Sniffer"
+	}
+}

@@ -1,0 +1,130 @@
+{
+	"backtrace" : 12,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"include",
+			"include_boilerplate",
+			"find_package"
+		],
+		"files" : 
+		[
+			"G:/zephyr_v4_1_0/zephyr/cmake/modules/kconfig.cmake",
+			"cmake/modules/sysbuild_kconfig.cmake",
+			"cmake/modules/sysbuild_default.cmake",
+			"G:/zephyr_v4_1_0/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake",
+			"G:/zephyr_v4_1_0/zephyr/share/sysbuild-package/cmake/SysbuildConfig.cmake",
+			"template/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 5
+			},
+			{
+				"command" : 3,
+				"file" : 5,
+				"line" : 10,
+				"parent" : 0
+			},
+			{
+				"file" : 4,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 4,
+				"line" : 8,
+				"parent" : 2
+			},
+			{
+				"file" : 3,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 3,
+				"line" : 97,
+				"parent" : 4
+			},
+			{
+				"command" : 1,
+				"file" : 3,
+				"line" : 75,
+				"parent" : 5
+			},
+			{
+				"file" : 2,
+				"parent" : 6
+			},
+			{
+				"command" : 1,
+				"file" : 2,
+				"line" : 19,
+				"parent" : 7
+			},
+			{
+				"file" : 1,
+				"parent" : 8
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 116,
+				"parent" : 9
+			},
+			{
+				"file" : 0,
+				"parent" : 10
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 221,
+				"parent" : 11
+			}
+		]
+	},
+	"id" : "sysbuild_menuconfig::@95dfbc4a1ed516501d75",
+	"name" : "sysbuild_menuconfig",
+	"paths" : 
+	{
+		"build" : "_sysbuild",
+		"source" : "template"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 12,
+			"isGenerated" : true,
+			"path" : "C:/Users/cjwsa/Documents/Zephyr_Projects/mcxw71_sniffer/Sniffer/debug/_sysbuild/CMakeFiles/sysbuild_menuconfig",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "C:/Users/cjwsa/Documents/Zephyr_Projects/mcxw71_sniffer/Sniffer/debug/_sysbuild/CMakeFiles/sysbuild_menuconfig.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

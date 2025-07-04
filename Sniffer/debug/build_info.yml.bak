@@ -1,0 +1,21 @@
+cmake:
+  board:
+    name: frdm_mcxw71
+    path:
+     - G:/zephyr_v4_1_0/zephyr/boards/nxp/frdm_mcxw71
+    qualifiers: mcxw716c
+    revision: 
+  images:
+   - name: Sniffer
+     source-dir: C:/Users/cjwsa/Documents/Zephyr_Projects/mcxw71_sniffer/Sniffer
+     type: MAIN
+   - name: mcuboot
+     source-dir: G:/zephyr_v4_1_0/bootloader/mcuboot/boot/zephyr
+     type: BOOTLOADER
+  kconfig:
+    files:
+     - C:/Users/cjwsa/Documents/Zephyr_Projects/mcxw71_sniffer/Sniffer/debug/_sysbuild/empty.conf
+     - C:/Users/cjwsa/Documents/Zephyr_Projects/mcxw71_sniffer/Sniffer/sysbuild.conf
+    user-files:
+     - C:/Users/cjwsa/Documents/Zephyr_Projects/mcxw71_sniffer/Sniffer/sysbuild.conf
+version: 0.1.0

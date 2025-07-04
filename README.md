@@ -22,9 +22,8 @@ This project is a firmware application built using the Zephyr RTOS for the MCXW7
 This application is designed to run on a development board equipped with the following components. The device tree aliases used in the code are:
 
 * **MCU:** A board supported by Zephyr with BLE and 802.15.4 radio capabilities.
-* **Accelerometer:** 
-xp,fxos8700
-* **Light Sensor:** ms,tsl2591
+* **Accelerometer:** fxos8700
+* **Light Sensor:** tsl2591
 * **LED:** A user-configurable LED, referenced via the led0 alias.
 
 ---
