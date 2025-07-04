@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "modules/hal_nxp/mcux/mcux-sdk-ng/drivers/sfa",
+		"source" : "G:/zephyr_v4_2_0_rc1/modules/hal/nxp/mcux/mcux-sdk-ng/drivers/sfa"
+	}
+}

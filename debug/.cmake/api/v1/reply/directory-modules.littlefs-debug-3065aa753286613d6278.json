@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "modules/littlefs",
+		"source" : "G:/zephyr_v4_2_0_rc1/zephyr/modules/littlefs"
+	}
+}

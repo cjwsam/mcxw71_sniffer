@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "modules/ti/simplelink_lpf3/source/ti/devices",
+		"source" : "G:/zephyr_v4_2_0_rc1/modules/hal/ti/simplelink_lpf3/source/ti/devices"
+	}
+}

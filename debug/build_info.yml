@@ -1,0 +1,54 @@
+cmake:
+  application:
+    configuration-dir: 'C:/Users/cjwsa/Documents/Zephyr_Projects/mcxw71_sniffer'
+    source-dir: 'C:/Users/cjwsa/Documents/Zephyr_Projects/mcxw71_sniffer'
+  board:
+    name: 'frdm_mcxw71'
+    path:
+     - 'G:/zephyr_v4_2_0_rc1/zephyr/boards/nxp/frdm_mcxw71'
+    qualifiers: 'mcxw716c'
+    revision: ''
+  devicetree:
+    bindings-dirs:
+     - 'G:/zephyr_v4_2_0_rc1/zephyr/dts/bindings'
+    files:
+     - 'G:/zephyr_v4_2_0_rc1/zephyr/boards/nxp/frdm_mcxw71/frdm_mcxw71.dts'
+    include-dirs:
+     - 'G:/zephyr_v4_2_0_rc1/modules/hal/ambiq/dts'
+     - 'G:/zephyr_v4_2_0_rc1/modules/hal/atmel/include'
+     - 'G:/zephyr_v4_2_0_rc1/modules/hal/bouffalolab/include'
+     - 'G:/zephyr_v4_2_0_rc1/modules/hal/bouffalolab/include/zephyr'
+     - 'G:/zephyr_v4_2_0_rc1/modules/hal/gigadevice/include'
+     - 'G:/zephyr_v4_2_0_rc1/modules/hal/microchip/include'
+     - 'G:/zephyr_v4_2_0_rc1/modules/hal/microchip/dts'
+     - 'G:/zephyr_v4_2_0_rc1/modules/hal/nuvoton/dts'
+     - 'G:/zephyr_v4_2_0_rc1/modules/hal/nxp/dts'
+     - 'G:/zephyr_v4_2_0_rc1/modules/hal/stm32/dts'
+     - 'G:/zephyr_v4_2_0_rc1/modules/hal/ti/dts'
+     - 'G:/zephyr_v4_2_0_rc1/zephyr/include'
+     - 'G:/zephyr_v4_2_0_rc1/zephyr/include/zephyr'
+     - 'G:/zephyr_v4_2_0_rc1/zephyr/dts/common'
+     - 'G:/zephyr_v4_2_0_rc1/zephyr/dts/vendor'
+     - 'G:/zephyr_v4_2_0_rc1/zephyr/dts/rx'
+     - 'G:/zephyr_v4_2_0_rc1/zephyr/dts/x86'
+     - 'G:/zephyr_v4_2_0_rc1/zephyr/dts/xtensa'
+     - 'G:/zephyr_v4_2_0_rc1/zephyr/dts/sparc'
+     - 'G:/zephyr_v4_2_0_rc1/zephyr/dts/riscv'
+     - 'G:/zephyr_v4_2_0_rc1/zephyr/dts/posix'
+     - 'G:/zephyr_v4_2_0_rc1/zephyr/dts/arm64'
+     - 'G:/zephyr_v4_2_0_rc1/zephyr/dts/arm'
+     - 'G:/zephyr_v4_2_0_rc1/zephyr/dts/arc'
+     - 'G:/zephyr_v4_2_0_rc1/zephyr/dts'
+  kconfig:
+    files:
+     - 'G:/zephyr_v4_2_0_rc1/zephyr/boards/nxp/frdm_mcxw71/frdm_mcxw71_defconfig'
+     - 'C:/Users/cjwsa/Documents/Zephyr_Projects/mcxw71_sniffer/prj.conf'
+    user-files:
+     - 'C:/Users/cjwsa/Documents/Zephyr_Projects/mcxw71_sniffer/prj.conf'
+  toolchain:
+    name: 'zephyr'
+    path: 'C:/Users/cjwsa/zephyr-sdk-0.17.0'
+  zephyr:
+    version: '4.2.00-rc1'
+    zephyr-base: 'G:/zephyr_v4_2_0_rc1/zephyr'
+version: '0.1.0'
