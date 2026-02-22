@@ -34,6 +34,7 @@
 #include <zephyr/net/net_mgmt.h>
 #include <zephyr/net/net_pkt.h>
 #include <zephyr/net/ieee802154.h>
+#include <zephyr/net/ieee802154_mgmt.h>
 
 
 /* Register the logging module once */
@@ -115,42 +116,43 @@ static int ble_sniffer_init(void)
 }
 
 
-/* --- 802.15.4 Sniffer (Corrected) --- */
+/* --- 802.15.4 Sniffer --- */
 
 static struct net_mgmt_event_callback mgmt_cb;
 
 /**
- * @brief Callback for IEEE 802.15.4 events.
+ * @brief Callback for IEEE 802.15.4 scan result events.
  *
- * NOTE: The function signature is updated to match the modern Zephyr API.
- * The 'info' pointer is passed as a direct argument, and we do NOT
- * unref the packet.
+ * The function signature matches the Zephyr net_mgmt_event_handler_t typedef:
+ *   void (*)(struct net_mgmt_event_callback *cb,
+ *            uint32_t mgmt_event,
+ *            struct net_if *iface)
+ *
+ * Additional event info is accessed via cb->info and cb->info_length,
+ * NOT passed as extra function arguments.
  */
 static void ieee802154_handler(struct net_mgmt_event_callback *cb,
                    uint32_t mgmt_event,
-                   struct net_if *iface,
-                   const void *info, size_t info_len)
+                   struct net_if *iface)
 {
-    /* Check for the correct event type */
-    if (mgmt_event == NET_EVENT_IEEE802154_PROMISCUOUS) {
-        const struct net_pkt *pkt = info;
-
-        if (!pkt) {
-            return;
-        }
-
-        /* The RSSI is stored in the link-layer attributes of the packet buffer */
-        LOG_INF("802.15.4 packet received (RSSI: %d dBm)", net_pkt_rssi(pkt));
-
-        /*
-         * DO NOT UNREF THE PACKET HERE.
-         * The network stack retains ownership for management events.
-         */
+    if (mgmt_event != NET_EVENT_IEEE802154_SCAN_RESULT) {
+        return;
     }
+
+    /* The scan result info is available through cb->info */
+    if (cb->info == NULL || cb->info_length == 0) {
+        return;
+    }
+
+    LOG_INF("802.15.4 scan result received on iface %p", iface);
 }
 
 /**
  * @brief Initializes the 802.15.4 sniffer.
+ *
+ * Sets up the network management event callback for scan results and
+ * enables promiscuous mode on the default IEEE 802.15.4 interface so
+ * that all traffic is captured.
  */
 static void ieee802154_sniffer_init(void)
 {
@@ -161,9 +163,9 @@ static void ieee802154_sniffer_init(void)
         return;
     }
 
-    /* Set up the callback to listen for raw packets */
+    /* Register for IEEE 802.15.4 scan result events */
     net_mgmt_init_event_callback(&mgmt_cb, ieee802154_handler,
-                       NET_EVENT_IEEE802154_PACKET_RECEIVED);
+                       NET_EVENT_IEEE802154_SCAN_RESULT);
     net_mgmt_add_event_callback(&mgmt_cb);
 
     /* Enter promiscuous mode to capture all traffic */

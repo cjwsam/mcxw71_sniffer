@@ -9,9 +9,9 @@
       "displayName": "debug-env",
       "hidden": true,
       "environment": {
-        "ZEPHYR_BASE": "G:/zephyr_v4_2_0_rc1/zephyr",
-        "ZEPHYR_SDK_INSTALL_DIR": "C:/Users/cjwsa/zephyr-sdk-0.17.0",
-        "MCUX_VENV_PATH": "C:/Users/cjwsa/.mcuxpressotools/.venv/Scripts",
+        "ZEPHYR_BASE": "$env{ZEPHYR_BASE}",
+        "ZEPHYR_SDK_INSTALL_DIR": "$env{ZEPHYR_SDK_INSTALL_DIR}",
+        "MCUX_VENV_PATH": "$env{MCUX_VENV_PATH}",
         "PATH": "$env{MCUX_VENV_PATH}${pathListSep}$penv{PATH}"
       },
       "cacheVariables": {}
@@ -21,9 +21,9 @@
       "displayName": "release-env",
       "hidden": true,
       "environment": {
-        "ZEPHYR_BASE": "G:/zephyr_v4_2_0_rc1/zephyr",
-        "ZEPHYR_SDK_INSTALL_DIR": "C:/Users/cjwsa/zephyr-sdk-0.17.0",
-        "MCUX_VENV_PATH": "C:/Users/cjwsa/.mcuxpressotools/.venv/Scripts",
+        "ZEPHYR_BASE": "$env{ZEPHYR_BASE}",
+        "ZEPHYR_SDK_INSTALL_DIR": "$env{ZEPHYR_SDK_INSTALL_DIR}",
+        "MCUX_VENV_PATH": "$env{MCUX_VENV_PATH}",
         "PATH": "$env{MCUX_VENV_PATH}${pathListSep}$penv{PATH}"
       },
       "cacheVariables": {}

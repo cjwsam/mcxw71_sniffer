@@ -1,13 +1,14 @@
 sample:
-  name: RGB LED
+  name: MCXW71 Sniffer
+  description: BLE and IEEE 802.15.4 sniffer with sensor logging for MCXW71
 tests:
-  sample.basic.rgb_led:
-    filter: dt_alias_exists("red-pwm-led") and dt_alias_exists("green-pwm-led")
-      and dt_alias_exists("blue-pwm-led")
+  sample.sniffer.mcxw71:
+    filter: dt_alias_exists("led0")
     tags:
-      - drivers
-      - pwm
-    depends_on: pwm
-    harness: led
+      - net
+      - bluetooth
+      - ieee802154
+    depends_on: gpio ble ieee802154
+    harness: console
     integration_platforms:
-      - nrf52840_mdk
+      - frdm_mcxw71
